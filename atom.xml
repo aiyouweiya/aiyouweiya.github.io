@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://aiyouweiya.github.io/"/>
-  <updated>2017-02-11T11:53:12.676Z</updated>
+  <updated>2017-02-11T11:54:21.853Z</updated>
   <id>https://aiyouweiya.github.io/</id>
   
   <author>
@@ -20,11 +20,10 @@
     <link href="https://aiyouweiya.github.io/2017/01/14/%E5%9F%BA%E4%BA%8EGitPages%E5%92%8CJekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>https://aiyouweiya.github.io/2017/01/14/基于GitPages和Jekyll搭建博客/</id>
     <published>2017-01-13T16:00:00.000Z</published>
-    <updated>2017-02-11T11:53:12.676Z</updated>
+    <updated>2017-02-11T11:54:21.853Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="搭建Jekyll环境"><a href="#搭建Jekyll环境" class="headerlink" title="搭建Jekyll环境"></a>搭建Jekyll环境</h2><p><code>Jekyll</code>，它是一款静态页面生成器，简单的理解就是能够把我们编写的<code>Markdown</code>文件转换为html文件以便在网页上更优雅的浏览。</p>
+    <content type="html"><![CDATA[<h2 id="搭建Jekyll环境"><a href="#搭建Jekyll环境" class="headerlink" title="搭建Jekyll环境"></a>搭建Jekyll环境</h2><p><code>Jekyll</code>，它是一款静态页面生成器，简单的理解就是能够把我们编写的<code>Markdown</code>文件转换为html文件以便在网页上更优雅的浏览。<br><a id="more"></a></p>
 <h3 id="集成Ruby"><a href="#集成Ruby" class="headerlink" title="集成Ruby"></a>集成Ruby</h3><p>我用的Win10，官网推荐的使用RubyInstall进行安装，来到<a href="https://rubyinstaller.org/" target="_blank" rel="external">https://rubyinstaller.org/</a><br>进行下载，官网推荐的是下载2.x版本的，我下载的是2.2.6,安装过程记得把多选框的第二个选上，不然又会比较麻烦。</p>
-<a id="more"></a>
 <p> <img src="/img/ruby2.jpg" alt="ruby2"></p>
 <p>安装完毕打开命令行执行<code>ruby -v</code>出现 <img src="/img/ruby3.jpg" alt="ruby3">即安装成功。</p>
 <h3 id="安装Jekyll"><a href="#安装Jekyll" class="headerlink" title="安装Jekyll"></a>安装Jekyll</h3><p>使用gem工具安装jekyll，这是一个十分漫长的过程，不知道翻墙会不会快点</p>
@@ -71,8 +70,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;搭建Jekyll环境&quot;&gt;&lt;a href=&quot;#搭建Jekyll环境&quot; class=&quot;headerlink&quot; title=&quot;搭建Jekyll环境&quot;&gt;&lt;/a&gt;搭建Jekyll环境&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Jekyll&lt;/code&gt;，它是一款静态页面生成器，简单的理解就是能够把我们编写的&lt;code&gt;Markdown&lt;/code&gt;文件转换为html文件以便在网页上更优雅的浏览。&lt;/p&gt;
-&lt;h3 id=&quot;集成Ruby&quot;&gt;&lt;a href=&quot;#集成Ruby&quot; class=&quot;headerlink&quot; title=&quot;集成Ruby&quot;&gt;&lt;/a&gt;集成Ruby&lt;/h3&gt;&lt;p&gt;我用的Win10，官网推荐的使用RubyInstall进行安装，来到&lt;a href=&quot;https://rubyinstaller.org/&quot;&gt;https://rubyinstaller.org/&lt;/a&gt;&lt;br&gt;进行下载，官网推荐的是下载2.x版本的，我下载的是2.2.6,安装过程记得把多选框的第二个选上，不然又会比较麻烦。&lt;/p&gt;
+      &lt;h2 id=&quot;搭建Jekyll环境&quot;&gt;&lt;a href=&quot;#搭建Jekyll环境&quot; class=&quot;headerlink&quot; title=&quot;搭建Jekyll环境&quot;&gt;&lt;/a&gt;搭建Jekyll环境&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Jekyll&lt;/code&gt;，它是一款静态页面生成器，简单的理解就是能够把我们编写的&lt;code&gt;Markdown&lt;/code&gt;文件转换为html文件以便在网页上更优雅的浏览。&lt;br&gt;
     
     </summary>
     
