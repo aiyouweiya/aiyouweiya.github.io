@@ -711,10 +711,16 @@ pre .javascript .function {
 .page-post-detail .post-type-quote blockquote div {
   text-align: center;
 }
-.post .post-body .group-picture img {
+.post .post-body .group-picture {
+  overflow: hidden;
+}
+img {
   box-sizing: border-box;
-  padding: 0 3px;
-  border: none;
+  padding: 2px 3px;
+  border: 0;
+}
+.group-picture {
+  overflow: hidden;
 }
 .post .group-picture-row {
   overflow: hidden;
@@ -723,13 +729,21 @@ pre .javascript .function {
 .post .group-picture-row:first-child {
   margin-top: 0;
 }
+.group-picture-row {
+  overflow: hidden;
+}
+.group-picture-container {
+  overflow: hidden;
+}
+.group-picture-column {
+  overflow: hidden;
+  float: left;
+}
 .post .group-picture-column {
   float: left;
 }
 .page-post-detail .post-body .group-picture-column {
-  float: none;
   margin-top: 10px;
-  width: auto !important;
 }
 .page-post-detail .post-body .group-picture-column img {
   margin: 0 auto;
@@ -1772,6 +1786,9 @@ img:hover {
   -o-transform: rotateZ(360deg);
   transform: rotateZ(360deg);
 }
+img {
+  float: left;
+}
 .site-state {
   overflow: hidden;
   line-height: 1.4;
@@ -1840,7 +1857,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0b8a6e;
+  background: #d66bbf;
 }
 .links-of-blogroll {
   font-size: 13px;
