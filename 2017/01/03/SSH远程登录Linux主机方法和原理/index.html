@@ -497,7 +497,7 @@ SSH是一种网络协议，用于计算机之间的加密登录，当我们使�
       
         <div class="post-tags">
           
-            <a href="/tags/ssh/" rel="tag"># ssh</a>
+            <a href="/tags/ssh/" rel="tag"><i class="fa fa-tag"></i> ssh</a>
           
         </div>
       
@@ -604,7 +604,7 @@ SSH是一种网络协议，用于计算机之间的加密登录，当我们使�
                src="/images/aiyouweiya.png"
                alt="aiyouweiya" />
           <p class="site-author-name" itemprop="name">aiyouweiya</p>
-          <p class="site-description motion-element" itemprop="description">一个天资愚钝的程序员幻想成为大神的修炼之路</p>
+          <p class="site-description motion-element" itemprop="description">记录生活、分享生活，做个有理想的好青年</p>
         </div>
         <nav class="site-state motion-element">
         
@@ -636,6 +636,55 @@ SSH是一种网络协议，用于计算机之间的加密登录，当我们使�
               <i class="fa fa-rss"></i>
               RSS
             </a>
+			
+			<!-- �ο�Never_yu��Highһ�¹��� 
+     ��վλ�ã�https://neveryu.github.io/2016/09/30/hexo-next-two,
+               https://neveryu.github.io/2016/11/11/hexo-next-three/-->
+    <a href='javascript:(
+    function go() {
+      var songs = [
+          "http://m2.music.126.net/O8RMqPVgtz5Qp_i1PBeBaQ==/5969248627774562.mp3",
+          "http://m2.music.126.net/3HglVSQUxqesNvCL2WKBUg==/1244647162662086.mp3",
+      ];
+ 
+      function S() {
+          var e = document.getElementById("audio_element_id");
+          if(e != null){
+              var index = parseInt(e.getAttribute("curSongIndex"));
+              if(index > songs.length - 2) {
+                  index = 0;
+              } else {
+                  index++;
+              }
+              e.setAttribute("curSongIndex", index);
+          }
+          e.src = i;
+          e.play()
+      }
+      function initAudioEle() {
+          var e = document.getElementById("audio_element_id");
+          if(e === null){
+            e = document.createElement("audio");
+            e.setAttribute("curSongIndex", 0);
+            e.id = "audio_element_id";
+            e.loop = false;
+            e.bgcolor = 0;
+            e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+            document.body.appendChild(e);
+            e.addEventListener("ended", function() {
+              go();
+            }, true);
+          }        
+      }
+    
+      initAudioEle();
+      var curSongIndex = parseInt(document.getElementById("audio_element_id").getAttribute("curSongIndex"));
+      var i = songs[curSongIndex];
+      S();
+    })()'>
+    <i class="menu-item-icon fa fa-music fa-fw"></i>Music</a> 
+<!-- end Highһ�� -->
+			
           </div>
         
 
