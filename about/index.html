@@ -82,6 +82,8 @@
 
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="aiyouweiya's blog" type="application/atom+xml" />
 
@@ -651,7 +653,7 @@
       ds.id = 'duoshuo-script';
       ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
       ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
+      (document.getElementById('footer')
       || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
   </script>
@@ -945,3 +947,5 @@
 <script type="text/javascript" src="/js/src/particle.js"></script>
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/src/love.js"></script>
+<!--崩溃欺骗-->
+<script type="text/javascript" src="/js/src/duoshuoshuo.js" charset="utf-8"></script>
