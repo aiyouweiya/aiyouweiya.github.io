@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[用WinSCP远程连接Linux主机的小技巧]]></title>
       <url>%2F2017%2F02%2F13%2F%E7%94%A8WinSCP%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5Linux%E4%B8%BB%E6%9C%BA%2F</url>
-      <content type="text"><![CDATA[什么是WinSCPWinSCP是一个Windows环境下使用ssh的开源图形化SFTP客户端。同时支持SCP协议。它的主要功能就是在本地与远程计算机间安全的复制文件，提供图形化界面，操作起来十分简单方便。传送门，WinSCP的简单用法不会自行百度。 使用密钥登陆远程主机WinSCP默认使用密码登陆，这种方式当然，是不安全的，所以我们要设置成密钥登陆 点击登陆对话框的高级按钮，弹出高级站点设置对话框，SSH--验证--密钥文件，选中之前生成的密钥文件id_rsa即可，程序会自动转换为ppk格式。 做好上述配置后，退出链接，再次连接时会提示你输入密钥的密码。 与远程主机保持连接尽管这个软件使用起来特别方便，但是隔了几分钟没在上面操作，连接就会断开，我们可以通过小小的设置就可以解决这个问题，在登陆状态下菜单栏的选项--选项--面板--远程，勾选上刷新远程面板间隔即可。 直接用root账户登陆修改/etc/ssh/sshd_config，把PermitRootLogin prohibit-password改为yes 修改/etc/sudoers，注释掉ubuntu ALL=(ALL:ALL) NOPASSWD: ALL，并添加下面内容 12ubuntu ALL=NOPASSWD: ALL%sudo ALL=(ALL) NOPASSWD:ALL 修改WinSCP设置，高级--环境--SFTP，修改SFTP服务器为sudo /usr/lib/openssh/sftp-server，保存，之后登陆就不再需要切换到su下了。]]></content>
+      <content type="text"><![CDATA[什么是WinSCPWinSCP是一个Windows环境下使用ssh的开源图形化SFTP客户端。同时支持SCP协议。它的主要功能就是在本地与远程计算机间安全的复制文件，提供图形化界面，操作起来十分简单方便。传送门 使用密钥登陆远程主机WinSCP默认使用密码登陆，这种方式当然，是不安全的，所以我们要设置成密钥登陆 点击登陆对话框的高级按钮，弹出高级站点设置对话框，SSH--验证--密钥文件，选中之前生成的密钥文件id_rsa即可，程序会自动转换为ppk格式。 做好上述配置后，退出链接，再次连接时会提示你输入密钥的密码。 与远程主机保持连接尽管这个软件使用起来特别方便，但是隔了几分钟没在上面操作，连接就会断开，我们可以通过小小的设置就可以解决这个问题，在登陆状态下菜单栏的选项--选项--面板--远程，勾选上刷新远程面板间隔即可。 直接用root账户登陆修改/etc/ssh/sshd_config，把PermitRootLogin prohibit-password改为yes 修改/etc/sudoers，注释掉ubuntu ALL=(ALL:ALL) NOPASSWD: ALL，并添加下面内容 12ubuntu ALL=NOPASSWD: ALL%sudo ALL=(ALL) NOPASSWD:ALL 修改WinSCP设置，高级--环境--SFTP，修改SFTP服务器为sudo /usr/lib/openssh/sftp-server，保存，之后登陆就不再需要切换到su下了。]]></content>
     </entry>
 
     
