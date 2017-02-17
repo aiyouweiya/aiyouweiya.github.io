@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="aiyouweiya's blog">
 <meta property="og:description" content="什么是Hexo？Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用Markdwon（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。    —— 文档 | Hexo   ——">
 <meta property="og:image" content="http://olb41wiaa.bkt.clouddn.com/yulan.jpg">
-<meta property="og:updated_time" content="2017-02-16T09:22:31.859Z">
+<meta property="og:updated_time" content="2017-02-17T06:24:18.230Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客搭建篇（一）">
 <meta name="twitter:description" content="什么是Hexo？Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用Markdwon（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。    —— 文档 | Hexo   ——">
@@ -463,8 +463,8 @@
 <h3 id="修改部署配置"><a href="#修改部署配置" class="headerlink" title="修改部署配置"></a>修改部署配置</h3><p>打开<code>_config.yml</code>，滑到最下面，修改以下内容。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type:</div></pre></td></tr></table></figure>
 <p>修改为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: yourusername.github.io</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<h3 id="开始部署"><a href="#开始部署" class="headerlink" title="开始部署"></a>开始部署</h3><p>回到根目录下，执行以下命令开始部署。此过程需要输入私钥的密码。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/yourname/yourname.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<h3 id="开始部署"><a href="#开始部署" class="headerlink" title="开始部署"></a>开始部署</h3><p>回到根目录下，执行以下命令开始部署。此过程需要输入你的用户名和密码</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure>
 <p>部署完毕，大概几十秒后在浏览器键入<code>yourusername.github.io</code>即可看到效果。以上就是写博客的大体步骤了。</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本片博客主要介绍了<code>Hexo</code>搭建博客的过程，包括<code>环境准备</code>，<code>搭建框架</code>，<code>创作博客</code>，<code>本地预览</code>，<code>部署到Github</code>，这样的几个步骤。</p>
