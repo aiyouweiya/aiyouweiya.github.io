@@ -95,18 +95,18 @@
 
 
 
-<meta name="description" content="什么是WinSCPWinSCP是一个Windows环境下使用ssh的开源图形化SFTP客户端。同时支持SCP协议。它的主要功能就是在本地与远程计算机间安全的复制文件，提供图形化界面，操作起来十分简单方便。传送门">
+<meta name="description" content="什么是SSHSecure Shell（缩写为SSH），由IETF的网络工作小组（Network Working Group）所制定；SSH是一项建立在应用层和传输层基础上的安全协议，为计算机上的Shell（壳层）提供安全的传输和使用环境。SSH是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用SSH协议可以有效防止远程管理过程中的信息泄露问题。透过SSH可以对所有传输的数据进行加密">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用WinSCP远程连接Linux主机的小技巧">
-<meta property="og:url" content="https://aiyouweiya.github.io/2017/02/13/用WinSCP远程连接Linux主机/index.html">
+<meta property="og:title" content="SSH远程登录Linux主机方法及原理">
+<meta property="og:url" content="https://aiyouweiya.github.io/posts/39582/index.html">
 <meta property="og:site_name" content="aiyouweiya's blog">
-<meta property="og:description" content="什么是WinSCPWinSCP是一个Windows环境下使用ssh的开源图形化SFTP客户端。同时支持SCP协议。它的主要功能就是在本地与远程计算机间安全的复制文件，提供图形化界面，操作起来十分简单方便。传送门">
-<meta property="og:image" content="http://olb41wiaa.bkt.clouddn.com/miyao.png">
-<meta property="og:updated_time" content="2017-02-16T09:22:21.851Z">
+<meta property="og:description" content="什么是SSHSecure Shell（缩写为SSH），由IETF的网络工作小组（Network Working Group）所制定；SSH是一项建立在应用层和传输层基础上的安全协议，为计算机上的Shell（壳层）提供安全的传输和使用环境。SSH是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用SSH协议可以有效防止远程管理过程中的信息泄露问题。透过SSH可以对所有传输的数据进行加密">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Man_in_the_middle_attack.svg/640px-Man_in_the_middle_attack.svg.png">
+<meta property="og:updated_time" content="2017-02-17T11:55:14.691Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="用WinSCP远程连接Linux主机的小技巧">
-<meta name="twitter:description" content="什么是WinSCPWinSCP是一个Windows环境下使用ssh的开源图形化SFTP客户端。同时支持SCP协议。它的主要功能就是在本地与远程计算机间安全的复制文件，提供图形化界面，操作起来十分简单方便。传送门">
-<meta name="twitter:image" content="http://olb41wiaa.bkt.clouddn.com/miyao.png">
+<meta name="twitter:title" content="SSH远程登录Linux主机方法及原理">
+<meta name="twitter:description" content="什么是SSHSecure Shell（缩写为SSH），由IETF的网络工作小组（Network Working Group）所制定；SSH是一项建立在应用层和传输层基础上的安全协议，为计算机上的Shell（壳层）提供安全的传输和使用环境。SSH是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用SSH协议可以有效防止远程管理过程中的信息泄露问题。透过SSH可以对所有传输的数据进行加密">
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Man_in_the_middle_attack.svg/640px-Man_in_the_middle_attack.svg.png">
 
 
 
@@ -134,14 +134,14 @@
 
 
 
-  <link rel="canonical" href="https://aiyouweiya.github.io/2017/02/13/用WinSCP远程连接Linux主机/"/>
+  <link rel="canonical" href="https://aiyouweiya.github.io/posts/39582/"/>
 
 
 
 
 
-  <title> 用WinSCP远程连接Linux主机的小技巧 | aiyouweiya's blog </title>
-  
+  <title> SSH远程登录Linux主机方法及原理 | aiyouweiya's blog </title>
+  <link href="http://7u2ss1.com1.z0.glb.clouddn.com/harlem-shake-style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -311,7 +311,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://aiyouweiya.github.io/2017/02/13/用WinSCP远程连接Linux主机/">
+  <link itemprop="mainEntityOfPage" href="https://aiyouweiya.github.io/posts/39582/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="aiyouweiya">
@@ -325,17 +325,17 @@
       <img style="display:none;" itemprop="url image" alt="aiyouweiya's blog" src="">
     </span>
   </span>
+  
 
     
       <header class="post-header">
-
         
         
           <h2 class="post-title" itemprop="name headline">
             
             
               
-                用WinSCP远程连接Linux主机的小技巧
+                SSH远程登录Linux主机方法及原理
               
             
           </h2>
@@ -344,14 +344,12 @@
         <div class="post-meta">
           <span class="post-time">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+              
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-13T00:00:00+08:00">
-                2017-02-13
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-03T00:00:00+08:00">
+                2017-01-03
               </time>
             
 
@@ -359,6 +357,7 @@
 
             
           </span>
+		  
 
           
 
@@ -366,11 +365,9 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/02/13/用WinSCP远程连接Linux主机/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/13/用WinSCP远程连接Linux主机/" itemprop="commentCount"></span>
+                
+                <a href="/posts/39582/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="posts/39582/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -378,11 +375,9 @@
 
           
           
-             <span id="/2017/02/13/用WinSCP远程连接Linux主机/" class="leancloud_visitors" data-flag-title="用WinSCP远程连接Linux主机的小技巧">
+             <span id="/posts/39582/" class="leancloud_visitors" data-flag-title="SSH远程登录Linux主机方法及原理">
                <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
+               
                
                  <span class="post-meta-item-text">阅读次数 </span>
                
@@ -395,10 +390,28 @@
           
 
           
+		  
+<span class="post-count">
+  &nbsp; | &nbsp;
+  <span class="post-meta-item-text">阅读时长</span>
+  <span class="post-meta-item-text">8&nbsp;m</span>
+</span>
+		  
+
+<span class="post-count">
+  &nbsp; | &nbsp;
+  <span class="post-meta-item-text">字数统计</span>
+  <span class="post-meta-item-text">2,142</span>
+</span>
+
+
+
 
         </div>
       </header>
     
+	
+	
 
 
     <div class="post-body" itemprop="articleBody">
@@ -407,18 +420,61 @@
       
 
       
-        <h2 id="什么是WinSCP"><a href="#什么是WinSCP" class="headerlink" title="什么是WinSCP"></a>什么是WinSCP</h2><p><code>WinSCP</code>是一个<code>Windows</code>环境下使用<code>ssh</code>的开源图形化<code>SFTP</code>客户端。同时支持<code>SCP</code>协议。它的主要功能就是在本地与远程计算机间安全的复制文件，提供图形化界面，操作起来十分简单方便。<a href="https://winscp.net/eng/index.php" target="_blank" rel="external">传送门</a></p>
+        <h2 id="什么是SSH"><a href="#什么是SSH" class="headerlink" title="什么是SSH"></a>什么是SSH</h2><p>Secure Shell（缩写为SSH），由IETF的网络工作小组（Network Working Group）所制定；SSH是一项建立在应用层和传输层基础上的安全协议，为计算机上的Shell（壳层）提供安全的传输和使用环境。SSH是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用SSH协议可以有效防止远程管理过程中的信息泄露问题。透过SSH可以对所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗,总之它能够为我们安全使用远程主机提供保障。</p>
 <a id="more"></a>
-<h2 id="使用密钥登陆远程主机"><a href="#使用密钥登陆远程主机" class="headerlink" title="使用密钥登陆远程主机"></a>使用密钥登陆远程主机</h2><p><code>WinSCP</code>默认使用密码登陆，这种方式当然，是不安全的，所以我们要设置成密钥登陆</p>
-<p>点击<code>登陆</code>对话框的<code>高级</code>按钮，弹出<code>高级站点设置</code>对话框，<code>SSH--验证--密钥文件</code>，选中之前生成的密钥文件<code>id_rsa</code>即可，程序会自动转换为<code>ppk</code>格式。</p>
-<p><img src="http://olb41wiaa.bkt.clouddn.com/miyao.png" width="100%"></p>
-<p>做好上述配置后，退出链接，再次连接时会提示你输入密钥的密码。</p>
-<h2 id="与远程主机保持连接"><a href="#与远程主机保持连接" class="headerlink" title="与远程主机保持连接"></a>与远程主机保持连接</h2><p>尽管这个软件使用起来特别方便，但是隔了几分钟没在上面操作，连接就会断开，我们可以通过小小的设置就可以解决这个问题，在登陆状态下菜单栏的<code>选项--选项--面板--远程</code>，勾选上<code>刷新远程面板间隔</code>即可。</p>
-<h2 id="直接用root账户登陆"><a href="#直接用root账户登陆" class="headerlink" title="直接用root账户登陆"></a>直接用root账户登陆</h2><p>修改<code>/etc/ssh/sshd_config</code>，改为如下</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#PermitRootLogin prohibit-password</span></div><div class="line">PermitRootLogin yes</div></pre></td></tr></table></figure>
-<p>修改<code>/etc/sudoers</code>，改为如下</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#ubuntu  ALL=(ALL:ALL) NOPASSWD: ALL</span></div><div class="line">ubuntu ALL=<span class="symbol">NOPASSWD:</span> ALL</div><div class="line">%sudo ALL=(ALL) <span class="symbol">NOPASSWD:</span>ALL</div></pre></td></tr></table></figure>
-<p>修改<code>WinSCP</code>设置，<code>高级--环境--SFTP</code>，修改<code>SFTP服务器</code>为<code>sudo  /usr/lib/openssh/sftp-server</code>，<code>保存</code>，之后登陆就不再需要切换到<code>su</code>下了。</p>
+<h2 id="怎样使用SSH登陆"><a href="#怎样使用SSH登陆" class="headerlink" title="怎样使用SSH登陆"></a>怎样使用SSH登陆</h2><p>在客户端来看，SSH提供两种级别的安全验证。</p>
+<ul>
+<li>第一种级别（基于密码的安全验证），知道帐号和密码，就可以登录到远程主机，本地主机用服务器的公钥对密码加密，然后将加密后的数据发送到服务器，服务器使用私钥解密，密码验证成功则允许登陆，否则不允许登陆。</li>
+<li>第二种级别（基于密钥的安全验证），需要依靠密钥，也就是你必须为自己创建一对密钥，并把公有密钥放在需要访问的服务器上。客户端软件会向服务器发出请求，请求用你的密钥进行安全验证。服务器收到请求之后，先在你在该服务器的用户根目录下寻找你的公有密钥，然后把它和你发送过来的公有密钥进行比较。如果两个密钥一致，服务器就用公有密钥加密「质询」（challenge）并把它发送给客户端软件，客户端用私钥进行解密，然后将解密后的数据发送回服务器进行验证。</li>
+</ul>
+<h3 id="密码登录"><a href="#密码登录" class="headerlink" title="密码登录"></a>密码登录</h3><p>假设你是第一次登录远程主机，使用<code>$ ssh ubuntu@xxx.com</code>登录，你会得到</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">The authenticity of host &apos;123.206.198.83 (123.206.198.83)&apos; can&apos;t be established.</div><div class="line">ECDSA key fingerprint is SHA256:P0XOcgjXyTikxaGKzmWsALKUYZPqTftP0KTFoTJnFvs.</div><div class="line">Are you sure you want to continue connecting (yes/no)?</div></pre></td></tr></table></figure>
+<p>意思是：我是你要登陆的远程主机，我的公钥的<code>SHA256</code>指纹是<code>P0XOcgjXyTikxaGKzmWsALKUYZPqTftP0KTFoTJnFvs</code>,你是否要继续连接，此时该主机的公钥指纹是不可信任的（中间人攻击），我们可以将其与远程主机的公钥进行对比（一般是公开的）例如<code>Github公钥</code><a href="https://help.github.com/articles/what-are-github-s-ssh-key-fingerprints/" target="_blank" rel="external">https://help.github.com/articles/what-are-github-s-ssh-key-fingerprints/</a> 如果一致的话就可以确认链接，不是的话就说明存在中间人攻击了。</p>
+<p>当确认连接后，会提示输入密码<code>ubuntu@xxx.com&#39;s password:</code>，此时输入正确的密码即可成功登陆，显示如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-53-generic x86_64)</div><div class="line"></div><div class="line"> * Documentation:  https://help.ubuntu.com</div><div class="line"> * Management:     https://landscape.canonical.com</div><div class="line"> * Support:        https://ubuntu.com/advantage</div><div class="line"></div><div class="line">Last login: Mon Feb 13 14:32:03 2017</div><div class="line">ubuntu@VM-37-129-ubuntu:~$</div></pre></td></tr></table></figure>
+<h4 id="中间人攻击"><a href="#中间人攻击" class="headerlink" title="中间人攻击"></a>中间人攻击</h4><p>攻击者与通讯的两端分别建立独立的联系，并交换其所收到的数据，使通讯的两端认为他们正在通过一个私密的连接与对方直接对话，但事实上整个会话都被攻击者完全控制。下面这个例子解释了密码登陆的危险性。</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Man_in_the_middle_attack.svg/640px-Man_in_the_middle_attack.svg.png" alt="中间人攻击" width="100%"></p>
+<p>假设爱丽丝（Alice）希望与鲍伯（Bob）通信。同时，马洛里（Mallory）希望拦截窃会话以进行窃听并可能在某些时候传送给鲍伯一个虚假的消息。</p>
+<p>首先，爱丽丝会向鲍勃索取他的公钥。如果Bob将他的公钥发送给Alice，并且此时马洛里能够拦截到这个公钥，就可以实施中间人攻击。马洛里发送给爱丽丝一个伪造的消息，声称自己是鲍伯，并且附上了马洛里自己的公钥（而不是鲍伯的）。<br>爱丽丝收到公钥后相信这个公钥是鲍伯的，于是爱丽丝将她的消息用马洛里的公钥（爱丽丝以为是鲍伯的）加密，并将加密后的消息回给鲍伯。马洛里再次截获爱丽丝回给鲍伯的消息，并使用马洛里自己的私钥对消息进行解密，如果马洛里愿意，她也可以对消息进行修改，然后马洛里使用鲍伯原先发给爱丽丝的公钥对消息再次加密。当鲍伯收到新加密后的消息时，他会相信这是从爱丽丝那里发来的消息。<br>1.爱丽丝发送给鲍伯一条消息，卻被马洛里截获：</p>
+<p>2.马洛里将这条截获的消息转送给鲍伯；此时鲍伯並無法分辨这条消息是否从真的爱丽丝那里发来的：</p>
+<p>3.鲍伯回应爱丽丝的消息，并附上了他的公钥：</p>
+<p>4.马洛里用自己的密钥替换了消息中鲍伯的密钥，并将消息转发给爱丽丝，声称这是鲍伯的公钥：</p>
+<p>5.爱丽丝用她以为是鲍伯的公钥加密了她的消息，以为只有鲍伯才能读到它：</p>
+<p>6.然而，由于这个消息实际上是用马洛里的密钥加密的，所以马洛里可以解密它，阅读它，并在愿意的时候修改它。他使用鲍伯的密钥重新加密，并将重新加密后的消息转发给鲍伯：</p>
+<p>7.鲍勃认为，这条消息是经由安全的传输通道从爱丽丝那里传来的。<br>这个例子显示了爱丽丝和鲍伯需要某种方法来确定他们是真正拿到了属于对方的公钥，而不是拿到来自攻击者的公钥。</p>
+<h3 id="密钥登陆"><a href="#密钥登陆" class="headerlink" title="密钥登陆"></a>密钥登陆</h3><h4 id="生成密钥"><a href="#生成密钥" class="headerlink" title="生成密钥"></a>生成密钥</h4><p>首先设置你的用户名密码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name &quot;Your Name&quot;</div><div class="line">$ git config --global user.email &quot;email@example.com&quot;</div></pre></td></tr></table></figure>
+<p>然后生成密钥：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen</div><div class="line">Geberating public/private rsa key pair.</div><div class="line">Enter file in which to save the key (/c/Documents and Settings/Administrator/.ssh/id_rsa):（设置保存公钥和私钥的位置，保持默认，可以不填直接回车）</div><div class="line">Enter passphrase (empty for no passphrase): （读取id_rsa的密码，可不填，不过建议填写）</div><div class="line">Enter same passphrase again: （再次输入id_rsa密码确认）</div><div class="line">Your identification has been saved in /c/Documents and Settings/Administrator/.ssh/id_rsa.</div><div class="line">Your public key has been saved in /c/Documents and Settings/Administrator/.ssh/id_rsa.pub.</div><div class="line">The key fingerprint is:生成的KEY 你的email帐户</div></pre></td></tr></table></figure>
+<p>完成以上就在<code>c/Documents and Settings/Administrator/.ssh/</code>生成了密钥对。</p>
+<h4 id="上传公钥"><a href="#上传公钥" class="headerlink" title="上传公钥"></a>上传公钥</h4><p>接下来我们就要将公钥发送给服务器，这个过程需要你输入密码（在未登录的状态下执行以下命令）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">scp ~/.ssh/id_rsa.pub ubuntu@xxx.com:~</div></pre></td></tr></table></figure></p>
+<p>输入密码后，公钥就被发送到服务器，但是还没完，我们还要将公钥添加到<code>authorized_keys</code>中，才能让服务器识别出本地的主机.（要在<code>root</code>权限下执行，不会自行百度）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd /home/ubuntu</div><div class="line">cat id_rsa.pub &gt;&gt; .ssh/authorized_keys</div></pre></td></tr></table></figure></p>
+<p>OK，该主机的公钥已经被服务器识别，当你再次<code>$ ssh ubuntu@xxx.com</code>时，你会得到：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Enter passphrase for key &apos;/c/Users/aiyouweiya/.ssh/id_rsa&apos;:（输入私钥的密码）</div></pre></td></tr></table></figure></p>
+<p>完成以上操作，就可完成密钥登陆。</p>
+<h2 id="禁用密码登录"><a href="#禁用密码登录" class="headerlink" title="禁用密码登录"></a>禁用密码登录</h2><p>中间人攻击让密码登录变得不安全，因此我们需要在服务器设置禁止密码登陆，进入<code>/etc/ssh</code>目录，编辑<code>sshd_config</code>文件，设置此选项<code>PasswordAuthentication no</code>,即不允许密码登录，之后还要重新启动<code>service restart sshd</code>。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>因为公钥加密比密码直接登录更安全，所以一般的服务器都会默认将<code>PasswordAuthentication</code>设置为<code>no</code>，即不允许密码登录。但是当你开启密码登录时，默认会先采用公钥登录，公钥登录不成功还是会采取密码登录。ps：本地密钥丢失也会直接采用密码登录。下面比较这两种登录方式的差异。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">密码登录</th>
+<th style="text-align:center">公钥登录</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>含义</td>
+<td style="text-align:center">本地主机用远程主机的公钥对密码加密，远程主机私钥解密</td>
+<td style="text-align:center">远程主机随机发送字符串到客户端，客户端用私钥加密，发送回远程主机，远程主机用公钥解密</td>
+</tr>
+<tr>
+<td>安全性</td>
+<td style="text-align:center">低，容易受到中间人攻击</td>
+<td style="text-align:center">高，但是要确保本地秘钥的安全性</td>
+</tr>
+</tbody>
+</table>
+<p>本文都是在<code>Ubuntu Server 16.04.1 LTS 64位</code>下进行的操作，其他类型的<code>Linux</code>机子都大同小异，留待读者自行研究吧……</p>
 
       
     </div>
@@ -481,18 +537,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/03/SSH远程登录Linux主机方法及原理/" rel="next" title="SSH远程登录Linux主机方法及原理">
-                <i class="fa fa-chevron-left"></i> SSH远程登录Linux主机方法及原理
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/02/15/Hexo博客搭建篇（一）/" rel="prev" title="Hexo博客搭建篇（一）">
-                Hexo博客搭建篇（一） <i class="fa fa-chevron-right"></i>
+              <a href="/posts/52976/" rel="prev" title="用WinSCP远程连接Linux主机的小技巧">
+                用WinSCP远程连接Linux主机的小技巧 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -508,26 +560,28 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2017/02/13/用WinSCP远程连接Linux主机/"
-     data-title="用WinSCP远程连接Linux主机的小技巧"
-     data-content=""
-     data-url="https://aiyouweiya.github.io/2017/02/13/用WinSCP远程连接Linux主机/">
-  <div class="ds-share-inline">
-    <ul  class="ds-share-icons-16">
-
-      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
-      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
-      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-
-    </ul>
-    <div class="ds-share-icons-more">
     </div>
   </div>
-</div>
-      
-    </div>
+  <div class="page-footer">
+    
+      <div id="eof" class="print-invisible">
+        <hr class="eof">
+      </div>
+
+      <div align="center" class="copyright" style="border: 1px solid #d3d3d3;width: 85%;margin: 0 auto;max-width: 45em;word-break: break-all;font-size: .93em;line-height: 1.6em;padding: .5em 1.8em;background: rgba(255,255,255,0.4)">
+         <p><span>本文标题:</span><a href="/posts/39582/">SSH远程登录Linux主机方法及原理</a></p>
+         <p><span>文章作者:</span><a href="/" title="访问 aiyouweiya 的个人博客">aiyouweiya</a></p>
+         <p><span>发布时间:</span>2017年1月3日 - 00时01分</p>
+         <p><span>最后更新:</span>2017年2月17日 - 19时02分</p>
+		 <p><span>本文字数:</span><span class="page-count">本文一共有2,142字</span></p>
+         <p><span>原始链接:</span><a href="/posts/39582/" title="SSH远程登录Linux主机方法及原理">https://aiyouweiya.github.io/posts/39582/</a></p>
+         <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" title="Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)">Attribution-NonCommercial 4.0</a></p>
+         <p><span>转载请保留以上信息。</span></p>
+      </div>
+    
+
+    
+
   </div>
 
           
@@ -541,8 +595,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/02/13/用WinSCP远程连接Linux主机/"
-           data-title="用WinSCP远程连接Linux主机的小技巧" data-url="https://aiyouweiya.github.io/2017/02/13/用WinSCP远程连接Linux主机/">
+      <div class="ds-thread" data-thread-key="posts/39582/"
+           data-title="SSH远程登录Linux主机方法及原理" data-url="https://aiyouweiya.github.io/posts/39582/">
       </div>
     
   </div>
@@ -709,6 +763,12 @@
 
         
         
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
 
         
         
@@ -728,7 +788,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是WinSCP"><span class="nav-number">1.</span> <span class="nav-text">什么是WinSCP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用密钥登陆远程主机"><span class="nav-number">2.</span> <span class="nav-text">使用密钥登陆远程主机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与远程主机保持连接"><span class="nav-number">3.</span> <span class="nav-text">与远程主机保持连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#直接用root账户登陆"><span class="nav-number">4.</span> <span class="nav-text">直接用root账户登陆</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是SSH"><span class="nav-number">1.</span> <span class="nav-text">什么是SSH</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎样使用SSH登陆"><span class="nav-number">2.</span> <span class="nav-text">怎样使用SSH登陆</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#密码登录"><span class="nav-number">2.1.</span> <span class="nav-text">密码登录</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#中间人攻击"><span class="nav-number">2.1.1.</span> <span class="nav-text">中间人攻击</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#密钥登陆"><span class="nav-number">2.2.</span> <span class="nav-text">密钥登陆</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#生成密钥"><span class="nav-number">2.2.1.</span> <span class="nav-text">生成密钥</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#上传公钥"><span class="nav-number">2.2.2.</span> <span class="nav-text">上传公钥</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#禁用密码登录"><span class="nav-number">3.</span> <span class="nav-text">禁用密码登录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
@@ -739,6 +799,7 @@
     </div>
   </aside>
 
+  
 
         
       </div>
@@ -767,6 +828,14 @@
     NexT.Pisces
   </a>
 </div>
+<script>
+var birthDay = new Date("11/20/2014");
+var now = new Date();
+var duration = now.getTime() - birthDay.getTime();
+var total= Math.floor(duration / (1000 * 60 * 60 * 24));
+document.getElementById("showDays").innerHTML = "本站已运行 "+total+" 天";
+</script>
+<span id="showDays"></span>
 
 
         
@@ -859,6 +928,7 @@
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
 
+  
 
 
   
