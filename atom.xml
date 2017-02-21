@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://aiyouweiya.github.io/"/>
-  <updated>2017-02-21T13:55:20.807Z</updated>
+  <updated>2017-02-21T14:06:33.148Z</updated>
   <id>https://aiyouweiya.github.io/</id>
   
   <author>
@@ -20,10 +20,11 @@
     <link href="https://aiyouweiya.github.io/posts/54527/"/>
     <id>https://aiyouweiya.github.io/posts/54527/</id>
     <published>2017-02-16T04:19:00.000Z</published>
-    <updated>2017-02-21T13:55:20.807Z</updated>
+    <updated>2017-02-21T14:06:33.148Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Next主题安装"><a href="#Next主题安装" class="headerlink" title="Next主题安装"></a>Next主题安装</h2><p><code>Next</code>是我用的第一款主题，精于心简于形的灵感，响应式的设计，还可以高度自由定制，体验起来真的是超级无敌爽！！关于<code>Next</code>的介绍大家可以参考官网 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">http://theme-next.iissnan.com/</a> 。</p>
 <p>在 <code>Hexo</code>中有两份主要的配置文件，其名称都是 <code>_config.yml</code>。 其中，一份位于站点根目录下，称为 <code>站点配置文件</code>，主要包含 <code>Hexo</code>本身的配置；另一份位于主题目录下，称为 <code>主题配置文件</code>，这份配置由主题作者提供，主要用于配置主题相关的选项。</p>
+<a id="more"></a>
 <h3 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h3><p>在终端下使用以下命令进行安装。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git clone https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure>
 <p>将主题文件拷贝至<code>站点目录</code>的 <code>themes</code> 目录下。</p>
@@ -154,8 +155,7 @@
 </tr>
 </tbody>
 </table>
-<p>头像设置示例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">avatar: http://example.com/avatar.png</div></pre></td></tr></table></figure>
+<h3 id="头像设置示例"><a href="#头像设置示例" class="headerlink" title="头像设置示例"></a>头像设置示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">avatar: http://example.com/avatar.png</div></pre></td></tr></table></figure>
 <h3 id="作者昵称"><a href="#作者昵称" class="headerlink" title="作者昵称"></a>作者昵称</h3><p>编辑<code>站点配置</code>文件， 设置 <code>author</code> 为你的昵称。</p>
 <h3 id="站点描述"><a href="#站点描述" class="headerlink" title="站点描述"></a>站点描述</h3><p>编辑 <code>站点配置</code>文件， 设置 <code>description</code> 字段为你的站点描述。站点描述可以是你喜欢的一句签名:)</p>
 <h3 id="站点建立时间"><a href="#站点建立时间" class="headerlink" title="站点建立时间"></a>站点建立时间</h3><p>这个时间将在站点的底部显示，例如 <code>© 2013 - 2015</code>。 编辑 主题配置文件，新增字段 <code>since</code>。</p>
@@ -330,7 +330,8 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Next主题安装&quot;&gt;&lt;a href=&quot;#Next主题安装&quot; class=&quot;headerlink&quot; title=&quot;Next主题安装&quot;&gt;&lt;/a&gt;Next主题安装&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Next&lt;/code&gt;是我用的第一款主题，精于心简于形的灵感，响应式的设计，还可
+      &lt;h2 id=&quot;Next主题安装&quot;&gt;&lt;a href=&quot;#Next主题安装&quot; class=&quot;headerlink&quot; title=&quot;Next主题安装&quot;&gt;&lt;/a&gt;Next主题安装&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Next&lt;/code&gt;是我用的第一款主题，精于心简于形的灵感，响应式的设计，还可以高度自由定制，体验起来真的是超级无敌爽！！关于&lt;code&gt;Next&lt;/code&gt;的介绍大家可以参考官网 &lt;a href=&quot;http://theme-next.iissnan.com/&quot;&gt;http://theme-next.iissnan.com/&lt;/a&gt; 。&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;Hexo&lt;/code&gt;中有两份主要的配置文件，其名称都是 &lt;code&gt;_config.yml&lt;/code&gt;。 其中，一份位于站点根目录下，称为 &lt;code&gt;站点配置文件&lt;/code&gt;，主要包含 &lt;code&gt;Hexo&lt;/code&gt;本身的配置；另一份位于主题目录下，称为 &lt;code&gt;主题配置文件&lt;/code&gt;，这份配置由主题作者提供，主要用于配置主题相关的选项。&lt;/p&gt;
     
     </summary>
     
