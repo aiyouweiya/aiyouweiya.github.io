@@ -1078,17 +1078,16 @@
 
       
         
-          
-            <h2 id="安装及启动nginx"><a href="#安装及启动nginx" class="headerlink" title="安装及启动nginx"></a>安装及启动nginx</h2><p>输入<code>apt install nginx</code>命令进行nginx的安装，当需要确认时输入”y“确认。</p>
+          <h2 id="安装及启动nginx"><a href="#安装及启动nginx" class="headerlink" title="安装及启动nginx"></a>安装及启动nginx</h2><p>输入<code>apt install nginx</code>命令进行nginx的安装，当需要确认时输入”y“确认。</p>
 <p>输入<code>service nginx start</code>启动nginx服务。</p>
 <p>输入<code>wget http://127.0.0.1</code>测试nginx服务，也可以直接在本地输入服务器网址。</p>
-<h2 id="查看安装的软件信息"><a href="#查看安装的软件信息" class="headerlink" title="查看安装的软件信息"></a>查看安装的软件信息</h2><p>软件安装完成后，可通过以下命令查看软件包所在的目录，及该软件包中的所有文件：</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo dpkg -L nginx <span class="comment">#查看目录</span></div><div class="line">sudo dpkg -l nginx <span class="comment">#查看版本等信息</span></div></pre></td></tr></table></figure>
-<h2 id="配置站点"><a href="#配置站点" class="headerlink" title="配置站点"></a>配置站点</h2><p>在目录<code>/etc/nginx/conf.d/</code>下新建一个配置文件<code>myblog.conf</code>:</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">    listen       <span class="number">80</span>;</div><div class="line">  	server_name  aiyouweiya.xyz;  <span class="comment"># 站点域名</span></div><div class="line">    access_log  /home/ubuntu/.log/access.log;  </div><div class="line">    error_log  /home/ubuntu/.log/error.log; </div><div class="line"></div><div class="line">    location / &#123;</div><div class="line">      	root   /home/ubuntu/aiyouweiya;  <span class="comment"># 站点根目录      </span></div><div class="line">	    index  index.html;</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>其中， <code>access_log</code>与<code>error_log</code>路径需要提前创建好，否则<code>nginx</code>会报错。然后重新reload一下nginx的配置:<br><code>sudo service nginx reload</code>。</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/59903/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

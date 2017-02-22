@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.aiyouweiya.xyz/"/>
-  <updated>2017-02-22T14:48:18.750Z</updated>
+  <updated>2017-02-22T16:06:48.150Z</updated>
   <id>blog.aiyouweiya.xyz/</id>
   
   <author>
@@ -20,11 +20,12 @@
     <link href="blog.aiyouweiya.xyz/posts/59903/"/>
     <id>blog.aiyouweiya.xyz/posts/59903/</id>
     <published>2017-02-21T14:34:00.000Z</published>
-    <updated>2017-02-22T14:48:18.750Z</updated>
+    <updated>2017-02-22T16:06:48.150Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装及启动nginx"><a href="#安装及启动nginx" class="headerlink" title="安装及启动nginx"></a>安装及启动nginx</h2><p>输入<code>apt install nginx</code>命令进行nginx的安装，当需要确认时输入”y“确认。</p>
 <p>输入<code>service nginx start</code>启动nginx服务。</p>
 <p>输入<code>wget http://127.0.0.1</code>测试nginx服务，也可以直接在本地输入服务器网址。</p>
+<a id="more"></a>
 <h2 id="查看安装的软件信息"><a href="#查看安装的软件信息" class="headerlink" title="查看安装的软件信息"></a>查看安装的软件信息</h2><p>软件安装完成后，可通过以下命令查看软件包所在的目录，及该软件包中的所有文件：</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo dpkg -L nginx <span class="comment">#查看目录</span></div><div class="line">sudo dpkg -l nginx <span class="comment">#查看版本等信息</span></div></pre></td></tr></table></figure>
 <h2 id="配置站点"><a href="#配置站点" class="headerlink" title="配置站点"></a>配置站点</h2><p>在目录<code>/etc/nginx/conf.d/</code>下新建一个配置文件<code>myblog.conf</code>:</p>
@@ -34,7 +35,9 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;安装及启动nginx&quot;&gt;&lt;a href=&quot;#安装及启动nginx&quot; class=&quot;headerlink&quot; title=&quot;安装及启动nginx&quot;&gt;&lt;/a&gt;安装及启动nginx&lt;/h2&gt;&lt;p&gt;输入&lt;code&gt;apt install nginx&lt;/code&gt;命令进行ng
+      &lt;h2 id=&quot;安装及启动nginx&quot;&gt;&lt;a href=&quot;#安装及启动nginx&quot; class=&quot;headerlink&quot; title=&quot;安装及启动nginx&quot;&gt;&lt;/a&gt;安装及启动nginx&lt;/h2&gt;&lt;p&gt;输入&lt;code&gt;apt install nginx&lt;/code&gt;命令进行nginx的安装，当需要确认时输入”y“确认。&lt;/p&gt;
+&lt;p&gt;输入&lt;code&gt;service nginx start&lt;/code&gt;启动nginx服务。&lt;/p&gt;
+&lt;p&gt;输入&lt;code&gt;wget http://127.0.0.1&lt;/code&gt;测试nginx服务，也可以直接在本地输入服务器网址。&lt;/p&gt;
     
     </summary>
     
