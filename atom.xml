@@ -4,9 +4,9 @@
   <subtitle>A Man Walking On The Cable</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://aiyouweiya.github.io/"/>
+  <link href="aiyouweiya.xyz/"/>
   <updated>2017-02-22T12:17:47.394Z</updated>
-  <id>https://aiyouweiya.github.io/</id>
+  <id>aiyouweiya.xyz/</id>
   
   <author>
     <name>aiyouweiya</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Ubuntu Server 16.04.1 LTS配置</title>
-    <link href="https://aiyouweiya.github.io/posts/59903/"/>
-    <id>https://aiyouweiya.github.io/posts/59903/</id>
+    <link href="aiyouweiya.xyz/posts/59903/"/>
+    <id>aiyouweiya.xyz/posts/59903/</id>
     <published>2017-02-21T14:34:00.000Z</published>
     <updated>2017-02-22T12:17:47.394Z</updated>
     
@@ -48,14 +48,14 @@ index  index.html;
     </summary>
     
     
-      <category term="腾讯云" scheme="https://aiyouweiya.github.io/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+      <category term="腾讯云" scheme="aiyouweiya.xyz/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
     
   </entry>
   
   <entry>
     <title>Hexo博客配置篇（二）</title>
-    <link href="https://aiyouweiya.github.io/posts/54527/"/>
-    <id>https://aiyouweiya.github.io/posts/54527/</id>
+    <link href="aiyouweiya.xyz/posts/54527/"/>
+    <id>aiyouweiya.xyz/posts/54527/</id>
     <published>2017-02-16T04:19:00.000Z</published>
     <updated>2017-02-21T15:42:11.486Z</updated>
     
@@ -373,14 +373,14 @@ index  index.html;
     </summary>
     
     
-      <category term="Hexo" scheme="https://aiyouweiya.github.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="aiyouweiya.xyz/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>解决Windows下文件路径太长无法删除的问题</title>
-    <link href="https://aiyouweiya.github.io/posts/33255/"/>
-    <id>https://aiyouweiya.github.io/posts/33255/</id>
+    <link href="aiyouweiya.xyz/posts/33255/"/>
+    <id>aiyouweiya.xyz/posts/33255/</id>
     <published>2017-02-15T16:00:00.000Z</published>
     <updated>2017-02-21T14:31:21.611Z</updated>
     
@@ -403,14 +403,14 @@ index  index.html;
     </summary>
     
     
-      <category term="Windows奇淫巧技" scheme="https://aiyouweiya.github.io/tags/Windows%E5%A5%87%E6%B7%AB%E5%B7%A7%E6%8A%80/"/>
+      <category term="Windows奇淫巧技" scheme="aiyouweiya.xyz/tags/Windows%E5%A5%87%E6%B7%AB%E5%B7%A7%E6%8A%80/"/>
     
   </entry>
   
   <entry>
     <title>Hexo博客搭建篇（三）</title>
-    <link href="https://aiyouweiya.github.io/posts/3077/"/>
-    <id>https://aiyouweiya.github.io/posts/3077/</id>
+    <link href="aiyouweiya.xyz/posts/3077/"/>
+    <id>aiyouweiya.xyz/posts/3077/</id>
     <published>2017-02-14T16:00:00.000Z</published>
     <updated>2017-02-22T13:09:56.962Z</updated>
     
@@ -419,14 +419,14 @@ index  index.html;
     </summary>
     
     
-      <category term="Hexo" scheme="https://aiyouweiya.github.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="aiyouweiya.xyz/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>Hexo博客搭建篇（一）</title>
-    <link href="https://aiyouweiya.github.io/posts/3077/"/>
-    <id>https://aiyouweiya.github.io/posts/3077/</id>
+    <link href="aiyouweiya.xyz/posts/3077/"/>
+    <id>aiyouweiya.xyz/posts/3077/</id>
     <published>2017-02-14T16:00:00.000Z</published>
     <updated>2017-02-21T14:31:17.248Z</updated>
     
@@ -504,14 +504,14 @@ index  index.html;
     </summary>
     
     
-      <category term="Hexo" scheme="https://aiyouweiya.github.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="aiyouweiya.xyz/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>用WinSCP远程连接Linux主机的小技巧</title>
-    <link href="https://aiyouweiya.github.io/posts/52976/"/>
-    <id>https://aiyouweiya.github.io/posts/52976/</id>
+    <link href="aiyouweiya.xyz/posts/52976/"/>
+    <id>aiyouweiya.xyz/posts/52976/</id>
     <published>2017-02-12T16:00:00.000Z</published>
     <updated>2017-02-21T14:31:19.491Z</updated>
     
@@ -536,14 +536,14 @@ index  index.html;
     </summary>
     
     
-      <category term="腾讯云" scheme="https://aiyouweiya.github.io/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+      <category term="腾讯云" scheme="aiyouweiya.xyz/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
     
   </entry>
   
   <entry>
     <title>SSH远程登录Linux主机方法及原理</title>
-    <link href="https://aiyouweiya.github.io/posts/39582/"/>
-    <id>https://aiyouweiya.github.io/posts/39582/</id>
+    <link href="aiyouweiya.xyz/posts/39582/"/>
+    <id>aiyouweiya.xyz/posts/39582/</id>
     <published>2017-01-02T16:00:00.000Z</published>
     <updated>2017-02-17T11:55:14.691Z</updated>
     
@@ -611,7 +611,7 @@ index  index.html;
     </summary>
     
     
-      <category term="腾讯云" scheme="https://aiyouweiya.github.io/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+      <category term="腾讯云" scheme="aiyouweiya.xyz/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
     
   </entry>
   
