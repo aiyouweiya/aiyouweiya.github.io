@@ -408,6 +408,22 @@ index  index.html;
   </entry>
   
   <entry>
+    <title>Hexo博客搭建篇（三）</title>
+    <link href="https://aiyouweiya.github.io/posts/3077/"/>
+    <id>https://aiyouweiya.github.io/posts/3077/</id>
+    <published>2017-02-14T16:00:00.000Z</published>
+    <updated>2017-02-22T13:09:56.962Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://aiyouweiya.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo博客搭建篇（一）</title>
     <link href="https://aiyouweiya.github.io/posts/3077/"/>
     <id>https://aiyouweiya.github.io/posts/3077/</id>
@@ -484,22 +500,6 @@ index  index.html;
     <summary type="html">
     
       &lt;h2 id=&quot;什么是Hexo？&quot;&gt;&lt;a href=&quot;#什么是Hexo？&quot; class=&quot;headerlink&quot; title=&quot;什么是Hexo？&quot;&gt;&lt;/a&gt;什么是Hexo？&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Hexo&lt;/code&gt; 是一个快速、简洁且高效的博客框架。&lt;code&gt;Hexo&lt;/code&gt; 使用&lt;code&gt;Markdwon&lt;/code&gt;（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;p style=&quot;text-align:right;&quot;&gt;    —— &lt;a href=&quot;https://hexo.io/zh-cn/docs/index.html&quot;&gt;文档 | Hexo &lt;/a&gt;  —— &lt;/p&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Hexo" scheme="https://aiyouweiya.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo博客搭建篇（三）</title>
-    <link href="https://aiyouweiya.github.io/posts/3077/"/>
-    <id>https://aiyouweiya.github.io/posts/3077/</id>
-    <published>2017-02-14T16:00:00.000Z</published>
-    <updated>2017-02-22T13:09:56.962Z</updated>
-    
-    <summary type="html">
     
     </summary>
     
