@@ -109,7 +109,7 @@
 输入wget http://127.0.0.1测试nginx服务，也可以直接在本地输入服务器网址。
 查看安装的软件信息软件安装完成后，可通过以下命令查看软件包所在的目录，及该软件包中的所有文件：
 12sudo dpkg -">
-<meta property="og:updated_time" content="2017-02-22T12:17:47.394Z">
+<meta property="og:updated_time" content="2017-02-22T14:48:18.750Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu Server 16.04.1 LTS配置">
 <meta name="twitter:description" content="安装及启动nginx输入apt install nginx命令进行nginx的安装，当需要确认时输入”y“确认。
@@ -411,7 +411,7 @@
 <span class="post-count">
   &nbsp; | &nbsp;
   <span class="post-meta-item-text">字数统计</span>
-  <span class="post-meta-item-text">206</span>
+  <span class="post-meta-item-text">220</span>
 </span>
 
 
@@ -435,18 +435,9 @@
 <p>输入<code>wget http://127.0.0.1</code>测试nginx服务，也可以直接在本地输入服务器网址。</p>
 <h2 id="查看安装的软件信息"><a href="#查看安装的软件信息" class="headerlink" title="查看安装的软件信息"></a>查看安装的软件信息</h2><p>软件安装完成后，可通过以下命令查看软件包所在的目录，及该软件包中的所有文件：</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo dpkg -L nginx <span class="comment">#查看目录</span></div><div class="line">sudo dpkg -l nginx <span class="comment">#查看版本等信息</span></div></pre></td></tr></table></figure>
-<p>在目录<code>/etc/nginx/conf.d/</code>下新建一个配置文件<code>myblog.conf</code>:</p>
-<p>server {</p>
-<pre><code>listen       80;
-server_name  aiyouweiya.xyz;
-access_log  /home/ubuntu/.log/access.log; 
-error_log  /home/ubuntu/.log/error.log; 
-
-location / {
-    root   /home/ubuntu/aiyouweiya;         
-index  index.html;
-</code></pre><p>   }<br>}</p>
-<p>其中， access_log与error_log 路径需要提前创建好，否则nginx会报错。然后重新reload一下nginx的配置:<br><code>sudo service nginx reload</code>。</p>
+<h2 id="配置站点"><a href="#配置站点" class="headerlink" title="配置站点"></a>配置站点</h2><p>在目录<code>/etc/nginx/conf.d/</code>下新建一个配置文件<code>myblog.conf</code>:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">    listen       <span class="number">80</span>;</div><div class="line">  	server_name  aiyouweiya.xyz;  <span class="comment"># 站点域名</span></div><div class="line">    access_log  /home/ubuntu/.log/access.log;  </div><div class="line">    error_log  /home/ubuntu/.log/error.log; </div><div class="line"></div><div class="line">    location / &#123;</div><div class="line">      	root   /home/ubuntu/aiyouweiya;  <span class="comment"># 站点根目录      </span></div><div class="line">	    index  index.html;</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>其中， <code>access_log</code>与<code>error_log</code>路径需要提前创建好，否则<code>nginx</code>会报错。然后重新reload一下nginx的配置:<br><code>sudo service nginx reload</code>。</p>
 
       
     </div>
@@ -544,8 +535,8 @@ index  index.html;
          <p><span>本文标题:</span><a href="/posts/59903/">Ubuntu Server 16.04.1 LTS配置</a></p>
          <p><span>文章作者:</span><a href="/" title="访问 aiyouweiya 的个人博客">aiyouweiya</a></p>
          <p><span>发布时间:</span>2017年2月21日 - 22时02分</p>
-         <p><span>最后更新:</span>2017年2月22日 - 20时02分</p>
-		 <p><span>本文字数:</span><span class="page-count">本文一共有206字</span></p>
+         <p><span>最后更新:</span>2017年2月22日 - 22时02分</p>
+		 <p><span>本文字数:</span><span class="page-count">本文一共有220字</span></p>
          <p><span>原始链接:</span><a href="/posts/59903/" title="Ubuntu Server 16.04.1 LTS配置">blog.aiyouweiya.xyz/posts/59903/</a></p>
          <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" title="Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)">Attribution-NonCommercial 4.0</a></p>
          <p><span>转载请保留以上信息。</span></p>
@@ -615,7 +606,7 @@ index  index.html;
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -760,7 +751,7 @@ index  index.html;
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装及启动nginx"><span class="nav-number">1.</span> <span class="nav-text">安装及启动nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看安装的软件信息"><span class="nav-number">2.</span> <span class="nav-text">查看安装的软件信息</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装及启动nginx"><span class="nav-number">1.</span> <span class="nav-text">安装及启动nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看安装的软件信息"><span class="nav-number">2.</span> <span class="nav-text">查看安装的软件信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置站点"><span class="nav-number">3.</span> <span class="nav-text">配置站点</span></a></li></ol></div>
             
 
           </div>
