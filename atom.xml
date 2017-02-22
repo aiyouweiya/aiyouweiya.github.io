@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://aiyouweiya.github.io/"/>
-  <updated>2017-02-21T14:06:33.148Z</updated>
+  <updated>2017-02-22T12:17:47.394Z</updated>
   <id>https://aiyouweiya.github.io/</id>
   
   <author>
@@ -16,11 +16,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Ubuntu Server 16.04.1 LTS配置</title>
+    <link href="https://aiyouweiya.github.io/posts/59903/"/>
+    <id>https://aiyouweiya.github.io/posts/59903/</id>
+    <published>2017-02-21T14:34:00.000Z</published>
+    <updated>2017-02-22T12:17:47.394Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装及启动nginx"><a href="#安装及启动nginx" class="headerlink" title="安装及启动nginx"></a>安装及启动nginx</h2><p>输入<code>apt install nginx</code>命令进行nginx的安装，当需要确认时输入”y“确认。</p>
+<p>输入<code>service nginx start</code>启动nginx服务。</p>
+<p>输入<code>wget http://127.0.0.1</code>测试nginx服务，也可以直接在本地输入服务器网址。</p>
+<h2 id="查看安装的软件信息"><a href="#查看安装的软件信息" class="headerlink" title="查看安装的软件信息"></a>查看安装的软件信息</h2><p>软件安装完成后，可通过以下命令查看软件包所在的目录，及该软件包中的所有文件：</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo dpkg -L nginx <span class="comment">#查看目录</span></div><div class="line">sudo dpkg -l nginx <span class="comment">#查看版本等信息</span></div></pre></td></tr></table></figure>
+<p>在目录<code>/etc/nginx/conf.d/</code>下新建一个配置文件<code>myblog.conf</code>:</p>
+<p>server {</p>
+<pre><code>listen       80;
+server_name  aiyouweiya.xyz;
+access_log  /home/ubuntu/.log/access.log; 
+error_log  /home/ubuntu/.log/error.log; 
+
+location / {
+    root   /home/ubuntu/aiyouweiya;         
+index  index.html;
+</code></pre><p>   }<br>}</p>
+<p>其中， access_log与error_log 路径需要提前创建好，否则nginx会报错。然后重新reload一下nginx的配置:<br><code>sudo service nginx reload</code>。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;安装及启动nginx&quot;&gt;&lt;a href=&quot;#安装及启动nginx&quot; class=&quot;headerlink&quot; title=&quot;安装及启动nginx&quot;&gt;&lt;/a&gt;安装及启动nginx&lt;/h2&gt;&lt;p&gt;输入&lt;code&gt;apt install nginx&lt;/code&gt;命令进行ng
+    
+    </summary>
+    
+    
+      <category term="腾讯云" scheme="https://aiyouweiya.github.io/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo博客配置篇（二）</title>
     <link href="https://aiyouweiya.github.io/posts/54527/"/>
     <id>https://aiyouweiya.github.io/posts/54527/</id>
     <published>2017-02-16T04:19:00.000Z</published>
-    <updated>2017-02-21T14:06:33.148Z</updated>
+    <updated>2017-02-21T15:42:11.486Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Next主题安装"><a href="#Next主题安装" class="headerlink" title="Next主题安装"></a>Next主题安装</h2><p><code>Next</code>是我用的第一款主题，精于心简于形的灵感，响应式的设计，还可以高度自由定制，体验起来真的是超级无敌爽！！关于<code>Next</code>的介绍大家可以参考官网 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">http://theme-next.iissnan.com/</a> 。</p>
 <p>在 <code>Hexo</code>中有两份主要的配置文件，其名称都是 <code>_config.yml</code>。 其中，一份位于站点根目录下，称为 <code>站点配置文件</code>，主要包含 <code>Hexo</code>本身的配置；另一份位于主题目录下，称为 <code>主题配置文件</code>，这份配置由主题作者提供，主要用于配置主题相关的选项。</p>
@@ -345,7 +382,7 @@
     <link href="https://aiyouweiya.github.io/posts/33255/"/>
     <id>https://aiyouweiya.github.io/posts/33255/</id>
     <published>2017-02-15T16:00:00.000Z</published>
-    <updated>2017-02-17T11:55:14.733Z</updated>
+    <updated>2017-02-21T14:31:21.611Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p><code>Node.js</code> <a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></p>
 <p><code>Node.js国内镜像</code> <a href="https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs" target="_blank" rel="external">https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs</a> </p>
@@ -375,7 +412,7 @@
     <link href="https://aiyouweiya.github.io/posts/3077/"/>
     <id>https://aiyouweiya.github.io/posts/3077/</id>
     <published>2017-02-14T16:00:00.000Z</published>
-    <updated>2017-02-17T11:55:14.661Z</updated>
+    <updated>2017-02-21T14:31:17.248Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么是Hexo？"><a href="#什么是Hexo？" class="headerlink" title="什么是Hexo？"></a>什么是Hexo？</h2><p><code>Hexo</code> 是一个快速、简洁且高效的博客框架。<code>Hexo</code> 使用<code>Markdwon</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p><p style="text-align:right;">    —— <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">文档 | Hexo </a>  —— </p><p></p>
 <a id="more"></a>
@@ -456,11 +493,27 @@
   </entry>
   
   <entry>
+    <title>Hexo博客搭建篇（三）</title>
+    <link href="https://aiyouweiya.github.io/posts/3077/"/>
+    <id>https://aiyouweiya.github.io/posts/3077/</id>
+    <published>2017-02-14T16:00:00.000Z</published>
+    <updated>2017-02-22T13:09:56.962Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://aiyouweiya.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>用WinSCP远程连接Linux主机的小技巧</title>
     <link href="https://aiyouweiya.github.io/posts/52976/"/>
     <id>https://aiyouweiya.github.io/posts/52976/</id>
     <published>2017-02-12T16:00:00.000Z</published>
-    <updated>2017-02-17T11:55:14.714Z</updated>
+    <updated>2017-02-21T14:31:19.491Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么是WinSCP"><a href="#什么是WinSCP" class="headerlink" title="什么是WinSCP"></a>什么是WinSCP</h2><p><code>WinSCP</code>是一个<code>Windows</code>环境下使用<code>ssh</code>的开源图形化<code>SFTP</code>客户端。同时支持<code>SCP</code>协议。它的主要功能就是在本地与远程计算机间安全的复制文件，提供图形化界面，操作起来十分简单方便。<a href="https://winscp.net/eng/index.php" target="_blank" rel="external">传送门</a></p>
 <a id="more"></a>
