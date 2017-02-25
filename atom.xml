@@ -98,7 +98,7 @@
     <link href="blog.aiyouweiya.xyz/posts/54527/"/>
     <id>blog.aiyouweiya.xyz/posts/54527/</id>
     <published>2017-02-16T04:19:00.000Z</published>
-    <updated>2017-02-21T15:42:11.486Z</updated>
+    <updated>2017-02-25T09:14:45.059Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Next主题安装"><a href="#Next主题安装" class="headerlink" title="Next主题安装"></a>Next主题安装</h2><p><code>Next</code>是我用的第一款主题，精于心简于形的灵感，响应式的设计，还可以高度自由定制，体验起来真的是超级无敌爽！！关于<code>Next</code>的介绍大家可以参考官网 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">http://theme-next.iissnan.com/</a> 。</p>
 <p>在 <code>Hexo</code>中有两份主要的配置文件，其名称都是 <code>_config.yml</code>。 其中，一份位于站点根目录下，称为 <code>站点配置文件</code>，主要包含 <code>Hexo</code>本身的配置；另一份位于主题目录下，称为 <code>主题配置文件</code>，这份配置由主题作者提供，主要用于配置主题相关的选项。</p>
@@ -413,6 +413,8 @@
     
     </summary>
     
+      <category term="Blog" scheme="blog.aiyouweiya.xyz/categories/Blog/"/>
+    
     
       <category term="Hexo" scheme="blog.aiyouweiya.xyz/tags/Hexo/"/>
     
@@ -455,7 +457,7 @@
     <link href="blog.aiyouweiya.xyz/posts/3077/"/>
     <id>blog.aiyouweiya.xyz/posts/3077/</id>
     <published>2017-02-14T16:00:00.000Z</published>
-    <updated>2017-02-21T14:31:17.248Z</updated>
+    <updated>2017-02-25T09:14:34.839Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么是Hexo？"><a href="#什么是Hexo？" class="headerlink" title="什么是Hexo？"></a>什么是Hexo？</h2><p><code>Hexo</code> 是一个快速、简洁且高效的博客框架。<code>Hexo</code> 使用<code>Markdwon</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p><p style="text-align:right;">    —— <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">文档 | Hexo </a>  —— </p><p></p>
 <a id="more"></a>
@@ -530,6 +532,8 @@
     
     </summary>
     
+      <category term="Blog" scheme="blog.aiyouweiya.xyz/categories/Blog/"/>
+    
     
       <category term="Hexo" scheme="blog.aiyouweiya.xyz/tags/Hexo/"/>
     
@@ -540,7 +544,7 @@
     <link href="blog.aiyouweiya.xyz/posts/52976/"/>
     <id>blog.aiyouweiya.xyz/posts/52976/</id>
     <published>2017-02-12T16:00:00.000Z</published>
-    <updated>2017-02-25T08:58:39.590Z</updated>
+    <updated>2017-02-25T09:15:05.538Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么是WinSCP"><a href="#什么是WinSCP" class="headerlink" title="什么是WinSCP"></a>什么是WinSCP</h2><p><code>WinSCP</code>是一个<code>Windows</code>环境下使用<code>ssh</code>的开源图形化<code>SFTP</code>客户端。同时支持<code>SCP</code>协议。它的主要功能就是在本地与远程计算机间安全的复制文件，提供图形化界面，操作起来十分简单方便。<a href="https://winscp.net/eng/index.php" target="_blank" rel="external">传送门</a></p>
 <a id="more"></a>
@@ -563,8 +567,6 @@
     </summary>
     
       <category term="Linux" scheme="blog.aiyouweiya.xyz/categories/Linux/"/>
-    
-      <category term="奇淫巧技" scheme="blog.aiyouweiya.xyz/categories/Linux/%E5%A5%87%E6%B7%AB%E5%B7%A7%E6%8A%80/"/>
     
     
       <category term="腾讯云" scheme="blog.aiyouweiya.xyz/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
