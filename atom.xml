@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="blog.aiyouweiya.xyz/"/>
-  <updated>2017-02-22T16:06:48.150Z</updated>
+  <updated>2017-02-25T08:57:40.558Z</updated>
   <id>blog.aiyouweiya.xyz/</id>
   
   <author>
@@ -16,11 +16,56 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>让ImageView浮动起来</title>
+    <link href="blog.aiyouweiya.xyz/posts/64620/"/>
+    <id>blog.aiyouweiya.xyz/posts/64620/</id>
+    <published>2017-02-25T04:19:00.000Z</published>
+    <updated>2017-02-25T08:57:40.558Z</updated>
+    
+    <content type="html"><![CDATA[<p>大家都知道<code>FloatingActionButton</code>是<code>Android Design Library</code>中的一个控件，实际上就是一个有浮动效果的按钮，下面是它的继承结构，我们可以看出它继承自<code>ImageView</code>，那么怎么用<code>ImageView</code>来实现类似<code>FloatingActionButton</code>浮动的效果呢？</p>
+<a id="more"></a>
+<p><img src="http://olb41wiaa.bkt.clouddn.com/fab.jpg" alt="FloatingActionButton的继承结构"></p>
+<h2 id="Android-5-0"><a href="#Android-5-0" class="headerlink" title="Android 5.0"></a>Android 5.0</h2><h3 id="浮动起来"><a href="#浮动起来" class="headerlink" title="浮动起来"></a>浮动起来</h3><p>在<code>Android 5.0</code>之后的版本中，有一个属性叫做<code>elevation</code>，它支持设置<code>View</code>的高度，可以实现浮动的效果。</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;ImageView</div><div class="line">        <span class="symbol">android:</span>layout_width=<span class="string">"?attr/actionBarSize"</span></div><div class="line">        <span class="symbol">android:</span>layout_height=<span class="string">"?attr/actionBarSize"</span></div><div class="line">        <span class="symbol">android:</span>background=<span class="string">"@color/colorAccent"</span></div><div class="line">        <span class="symbol">android:</span>src=<span class="string">"@drawable/ic_done_white_24dp"</span></div><div class="line">        <span class="symbol">android:</span>layout_gravity=<span class="string">"bottom|right"</span></div><div class="line">        <span class="symbol">android:</span>elevation=<span class="string">"8dp"</span></div><div class="line">        <span class="symbol">android:</span>layout_marginRight=<span class="string">"@dimen/fab_margin"</span></div><div class="line">        <span class="symbol">android:</span>layout_marginBottom=<span class="string">"@dimen/fab_margin"</span>/&gt;</div></pre></td></tr></table></figure>
+<p>效果图如下(Nexus 6 API 25)：</p>
+<p><img src="http://olb41wiaa.bkt.clouddn.com/DFG_2017-02-25-15-12-10.png" height="570" width="370"></p>
+<h3 id="更改为圆形"><a href="#更改为圆形" class="headerlink" title="更改为圆形"></a>更改为圆形</h3><p>首先在<code>res\drawable-v21</code>下新建<code>fab.xml</code>资源文件，作为圆形的背景。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;!--res\drawable-v21\fab.xml--&gt;</div><div class="line">&lt;!--ripple是Android 5.0之后自带的一种属性，用来实现点击波纹的效果--&gt;</div><div class="line">&lt;ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="#44000000"&gt;</div><div class="line">    &lt;item&gt;</div><div class="line">        &lt;shape android:shape="oval"&gt;</div><div class="line">            &lt;solid android:color="@color/colorAccent"/&gt;</div><div class="line">        &lt;/shape&gt;</div><div class="line">    &lt;/item&gt;</div><div class="line">&lt;/ripple&gt;</div></pre></td></tr></table></figure>
+<p>然后更改上面<code>ImageView</code>的背景为<code>fab.xml</code>。</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;!--<span class="symbol">android:</span>background=<span class="string">"@color/colorAccent"</span>--&gt;</div><div class="line"><span class="symbol">android:</span>background=<span class="string">"@drawable/fab.xml"</span></div></pre></td></tr></table></figure>
+<p>效果图：</p>
+<p><img src="http://olb41wiaa.bkt.clouddn.com/DFG_2017-02-25-15-04-11.png" height="570" width="370"></p>
+<h2 id="Android-5-0之前"><a href="#Android-5-0之前" class="headerlink" title="Android 5.0之前"></a>Android 5.0之前</h2><p>在<code>Android Lollipop</code>之前，实现浮动效果稍微有一点点复杂，因为不支持<code>elevation</code>属性，所以这里只能模仿浮动的效果，大致的思路就是，在第一张图片的下面放一张暗色的图片来模仿阴影效果。</p>
+<p>在<code>res\drawable</code>下新建<code>fab.xml</code>资源文件，<code>layer-list</code>里面包含两个图层，<code>bottom</code>为<code>0</code>的是下面的图层，用来模仿阴影效果。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;!--res\drawable\fab.xml--&gt;</div><div class="line">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</div><div class="line">&lt;layer-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;</div><div class="line">    &lt;item android:bottom=&quot;0dp&quot; android:left=&quot;2dp&quot; android:right=&quot;2dp&quot; android:top=&quot;2dp&quot;&gt;</div><div class="line">        &lt;shape android:shape=&quot;oval&quot;&gt;</div><div class="line">            &lt;solid android:color=&quot;#44000000&quot; /&gt;</div><div class="line">        &lt;/shape&gt;</div><div class="line">    &lt;/item&gt;</div><div class="line"></div><div class="line">    &lt;item android:bottom=&quot;2dp&quot; android:left=&quot;2dp&quot; android:right=&quot;2dp&quot; android:top=&quot;2dp&quot;&gt;</div><div class="line">        &lt;shape android:shape=&quot;oval&quot;&gt;</div><div class="line">            &lt;solid android:color=&quot;@color/colorAccent&quot; /&gt;</div><div class="line">        &lt;/shape&gt;</div><div class="line">    &lt;/item&gt;</div><div class="line">&lt;/layer-list&gt;</div></pre></td></tr></table></figure>
+<p>效果图（Nexus 4 API 16）</p>
+<p><img src="http://olb41wiaa.bkt.clouddn.com/2017-02-25_143354.jpg" height="570" width="370"></p>
+<h3 id="模仿波纹效果"><a href="#模仿波纹效果" class="headerlink" title="模仿波纹效果"></a>模仿波纹效果</h3><p>上述在<code>Nexus 4 API 16</code>的浮动已实现，但是点击的波纹效果并没有实现，这里使用选择器<code>selector</code>来模仿点击效果。</p>
+<p>修改<code>res\drawable\fab.xml</code></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</div><div class="line">&lt;selector xmlns:android="http://schemas.android.com/apk/res/android"&gt;</div><div class="line">    &lt;item android:state_selected="false"&gt;</div><div class="line">        &lt;layer-list&gt;</div><div class="line">            &lt;item android:bottom="0dp" android:left="2dp" android:right="2dp" android:top="2dp"&gt;</div><div class="line">                &lt;shape android:shape="oval"&gt;</div><div class="line">                    &lt;solid android:color="#44000000" /&gt;</div><div class="line">                &lt;/shape&gt;</div><div class="line">            &lt;/item&gt;</div><div class="line">            &lt;item android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp"&gt;</div><div class="line">                &lt;shape android:shape="oval"&gt;</div><div class="line">                    &lt;solid android:color="@color/colorAccent" /&gt;</div><div class="line">                &lt;/shape&gt;</div><div class="line">            &lt;/item&gt;</div><div class="line">        &lt;/layer-list&gt;</div><div class="line">    &lt;/item&gt;</div><div class="line">    &lt;item android:bottom="2dp" android:left="2dp" android:right="2dp" android:state_pressed="true" android:top="2dp"&gt;</div><div class="line">        &lt;shape android:shape="oval"&gt;</div><div class="line">            &lt;solid android:color="#44000000" /&gt;</div><div class="line">        &lt;/shape&gt;</div><div class="line">    &lt;/item&gt;</div><div class="line">&lt;/selector&gt;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;大家都知道&lt;code&gt;FloatingActionButton&lt;/code&gt;是&lt;code&gt;Android Design Library&lt;/code&gt;中的一个控件，实际上就是一个有浮动效果的按钮，下面是它的继承结构，我们可以看出它继承自&lt;code&gt;ImageView&lt;/code&gt;，那么怎么用&lt;code&gt;ImageView&lt;/code&gt;来实现类似&lt;code&gt;FloatingActionButton&lt;/code&gt;浮动的效果呢？&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="blog.aiyouweiya.xyz/categories/Android/"/>
+    
+    
+      <category term="Material Design" scheme="blog.aiyouweiya.xyz/tags/Material-Design/"/>
+    
+      <category term="UI" scheme="blog.aiyouweiya.xyz/tags/UI/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Ubuntu Server 16.04.1 LTS配置</title>
     <link href="blog.aiyouweiya.xyz/posts/59903/"/>
     <id>blog.aiyouweiya.xyz/posts/59903/</id>
     <published>2017-02-21T14:34:00.000Z</published>
-    <updated>2017-02-22T16:06:48.150Z</updated>
+    <updated>2017-02-25T08:59:47.711Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装及启动nginx"><a href="#安装及启动nginx" class="headerlink" title="安装及启动nginx"></a>安装及启动nginx</h2><p>输入<code>apt install nginx</code>命令进行nginx的安装，当需要确认时输入”y“确认。</p>
 <p>输入<code>service nginx start</code>启动nginx服务。</p>
@@ -40,6 +85,8 @@
 &lt;p&gt;输入&lt;code&gt;wget http://127.0.0.1&lt;/code&gt;测试nginx服务，也可以直接在本地输入服务器网址。&lt;/p&gt;
     
     </summary>
+    
+      <category term="Linux" scheme="blog.aiyouweiya.xyz/categories/Linux/"/>
     
     
       <category term="腾讯云" scheme="blog.aiyouweiya.xyz/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
@@ -376,7 +423,7 @@
     <link href="blog.aiyouweiya.xyz/posts/33255/"/>
     <id>blog.aiyouweiya.xyz/posts/33255/</id>
     <published>2017-02-15T16:00:00.000Z</published>
-    <updated>2017-02-21T14:31:21.611Z</updated>
+    <updated>2017-02-25T08:59:15.690Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p><code>Node.js</code> <a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></p>
 <p><code>Node.js国内镜像</code> <a href="https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs" target="_blank" rel="external">https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs</a> </p>
@@ -395,6 +442,8 @@
 &lt;p&gt;一路下一步安装，注意请勾选&lt;strong&gt;Add to PATH&lt;/strong&gt;选项。&lt;/p&gt;
     
     </summary>
+    
+      <category term="奇淫巧技" scheme="blog.aiyouweiya.xyz/categories/%E5%A5%87%E6%B7%AB%E5%B7%A7%E6%8A%80/"/>
     
     
       <category term="Windows奇淫巧技" scheme="blog.aiyouweiya.xyz/tags/Windows%E5%A5%87%E6%B7%AB%E5%B7%A7%E6%8A%80/"/>
@@ -491,7 +540,7 @@
     <link href="blog.aiyouweiya.xyz/posts/52976/"/>
     <id>blog.aiyouweiya.xyz/posts/52976/</id>
     <published>2017-02-12T16:00:00.000Z</published>
-    <updated>2017-02-21T14:31:19.491Z</updated>
+    <updated>2017-02-25T08:58:39.590Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么是WinSCP"><a href="#什么是WinSCP" class="headerlink" title="什么是WinSCP"></a>什么是WinSCP</h2><p><code>WinSCP</code>是一个<code>Windows</code>环境下使用<code>ssh</code>的开源图形化<code>SFTP</code>客户端。同时支持<code>SCP</code>协议。它的主要功能就是在本地与远程计算机间安全的复制文件，提供图形化界面，操作起来十分简单方便。<a href="https://winscp.net/eng/index.php" target="_blank" rel="external">传送门</a></p>
 <a id="more"></a>
@@ -513,6 +562,10 @@
     
     </summary>
     
+      <category term="Linux" scheme="blog.aiyouweiya.xyz/categories/Linux/"/>
+    
+      <category term="奇淫巧技" scheme="blog.aiyouweiya.xyz/categories/Linux/%E5%A5%87%E6%B7%AB%E5%B7%A7%E6%8A%80/"/>
+    
     
       <category term="腾讯云" scheme="blog.aiyouweiya.xyz/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
     
@@ -523,7 +576,7 @@
     <link href="blog.aiyouweiya.xyz/posts/39582/"/>
     <id>blog.aiyouweiya.xyz/posts/39582/</id>
     <published>2017-01-02T16:00:00.000Z</published>
-    <updated>2017-02-17T11:55:14.691Z</updated>
+    <updated>2017-02-25T09:00:11.975Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么是SSH"><a href="#什么是SSH" class="headerlink" title="什么是SSH"></a>什么是SSH</h2><p>Secure Shell（缩写为SSH），由IETF的网络工作小组（Network Working Group）所制定；SSH是一项建立在应用层和传输层基础上的安全协议，为计算机上的Shell（壳层）提供安全的传输和使用环境。SSH是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用SSH协议可以有效防止远程管理过程中的信息泄露问题。透过SSH可以对所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗,总之它能够为我们安全使用远程主机提供保障。</p>
 <a id="more"></a>
@@ -587,6 +640,8 @@
       &lt;h2 id=&quot;什么是SSH&quot;&gt;&lt;a href=&quot;#什么是SSH&quot; class=&quot;headerlink&quot; title=&quot;什么是SSH&quot;&gt;&lt;/a&gt;什么是SSH&lt;/h2&gt;&lt;p&gt;Secure Shell（缩写为SSH），由IETF的网络工作小组（Network Working Group）所制定；SSH是一项建立在应用层和传输层基础上的安全协议，为计算机上的Shell（壳层）提供安全的传输和使用环境。SSH是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用SSH协议可以有效防止远程管理过程中的信息泄露问题。透过SSH可以对所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗,总之它能够为我们安全使用远程主机提供保障。&lt;/p&gt;
     
     </summary>
+    
+      <category term="Linux" scheme="blog.aiyouweiya.xyz/categories/Linux/"/>
     
     
       <category term="腾讯云" scheme="blog.aiyouweiya.xyz/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
