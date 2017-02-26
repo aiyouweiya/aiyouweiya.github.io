@@ -650,4 +650,57 @@
     
   </entry>
   
+  <entry>
+    <title>药房管理系统</title>
+    <link href="blog.aiyouweiya.xyz/posts/4506/"/>
+    <id>blog.aiyouweiya.xyz/posts/4506/</id>
+    <published>2016-06-12T16:00:00.000Z</published>
+    <updated>2017-02-26T12:01:34.813Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="HTDaYaoFang"><a href="#HTDaYaoFang" class="headerlink" title="HTDaYaoFang"></a>HTDaYaoFang</h1><p>药店管理系统，大二下软件实训项目</p>
+<p>源代码地址：<a href="https://github.com/aiyouweiya/HTDaYaoFang" target="_blank" rel="external">https://github.com/aiyouweiya/HTDaYaoFang</a></p>
+<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><ul>
+<li>药品销售</li>
+<li>仓库管理</li>
+<li>人员管理</li>
+<li>数据导出</li>
+</ul>
+<h3 id="平台"><a href="#平台" class="headerlink" title="平台"></a>平台</h3><ul>
+<li>Windows 10</li>
+<li>Myeclipse</li>
+<li>MySQL 5.7 <a id="more"></a>
+</li>
+</ul>
+<h3 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h3><p><img src="https://github.com/aiyouweiya/HTDaYaoFang/blob/master/screenshot/login.png?raw=true"></p>
+<p><img src="https://github.com/aiyouweiya/HTDaYaoFang/blob/master/screenshot/sale_main.png?raw=true"></p>
+<p><img src="https://github.com/aiyouweiya/HTDaYaoFang/blob/master/screenshot/garage.png?raw=true"></p>
+<p><img src="https://github.com/aiyouweiya/HTDaYaoFang/blob/master/screenshot/update_yao.png?raw=true"></p>
+<p><img src="https://github.com/aiyouweiya/HTDaYaoFang/blob/master/screenshot/person.png?raw=true"></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>整个项目大概历时三天，现在想想项目并没有什么难点，无非就是界面布局和增删改查繁琐一点，数据库的设计当时没有考虑太多，就十分粗暴的弄了两张毫无关联的表，员工表employe和药品表yao。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;HTDaYaoFang&quot;&gt;&lt;a href=&quot;#HTDaYaoFang&quot; class=&quot;headerlink&quot; title=&quot;HTDaYaoFang&quot;&gt;&lt;/a&gt;HTDaYaoFang&lt;/h1&gt;&lt;p&gt;药店管理系统，大二下软件实训项目&lt;/p&gt;
+&lt;p&gt;源代码地址：&lt;a href=&quot;https://github.com/aiyouweiya/HTDaYaoFang&quot;&gt;https://github.com/aiyouweiya/HTDaYaoFang&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;功能&quot;&gt;&lt;a href=&quot;#功能&quot; class=&quot;headerlink&quot; title=&quot;功能&quot;&gt;&lt;/a&gt;功能&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;药品销售&lt;/li&gt;
+&lt;li&gt;仓库管理&lt;/li&gt;
+&lt;li&gt;人员管理&lt;/li&gt;
+&lt;li&gt;数据导出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;平台&quot;&gt;&lt;a href=&quot;#平台&quot; class=&quot;headerlink&quot; title=&quot;平台&quot;&gt;&lt;/a&gt;平台&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Windows 10&lt;/li&gt;
+&lt;li&gt;Myeclipse&lt;/li&gt;
+&lt;li&gt;MySQL 5.7
+    
+    </summary>
+    
+      <category term="Java" scheme="blog.aiyouweiya.xyz/categories/Java/"/>
+    
+    
+      <category term="个人项目" scheme="blog.aiyouweiya.xyz/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
 </feed>
