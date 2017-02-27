@@ -100,7 +100,7 @@
     <published>2017-02-16T04:19:00.000Z</published>
     <updated>2017-02-25T09:14:45.059Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Next主题安装"><a href="#Next主题安装" class="headerlink" title="Next主题安装"></a>Next主题安装</h2><p><code>Next</code>是我用的第一款主题，精于心简于形的灵感，响应式的设计，还可以高度自由定制，体验起来真的是超级无敌爽！！关于<code>Next</code>的介绍大家可以参考官网 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">http://theme-next.iissnan.com/</a> 。</p>
+    <content type="html"><![CDATA[<h2 id="Next主题安装"><a href="#Next主题安装" class="headerlink" title="Next主题安装"></a>Next主题安装</h2><p><code>Next</code>是我用的第一款主题，精于心简于形的灵感，响应式的设计，还可以高度自由定制，体验起来真的是超级无敌爽！！关于<code>Next</code>的介绍大家可以参考官网 <a href="http://theme-next.iissnan.com/" rel="external nofollow noopener noreferrer" target="_blank">http://theme-next.iissnan.com/</a> 。</p>
 <p>在 <code>Hexo</code>中有两份主要的配置文件，其名称都是 <code>_config.yml</code>。 其中，一份位于站点根目录下，称为 <code>站点配置文件</code>，主要包含 <code>Hexo</code>本身的配置；另一份位于主题目录下，称为 <code>主题配置文件</code>，这份配置由主题作者提供，主要用于配置主题相关的选项。</p>
 <a id="more"></a>
 <h3 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h3><p>在终端下使用以下命令进行安装。</p>
@@ -173,7 +173,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h3><p>菜单配置包括三个部分，第一是菜单项（名称和链接），第二是菜单项的显示文本，第三是菜单项对应的图标。 <code>NexT</code>使用的是 <a href="http://fontawesome.io/" target="_blank" rel="external">Font Awesome</a> 提供的图标， Font Awesome 提供了 600+ 的图标，可以满足绝大的多数的场景，同时无须担心在 <code>Retina</code>屏幕下 图标模糊的问题。</p>
+<h3 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h3><p>菜单配置包括三个部分，第一是菜单项（名称和链接），第二是菜单项的显示文本，第三是菜单项对应的图标。 <code>NexT</code>使用的是 <a href="http://fontawesome.io/" rel="external nofollow noopener noreferrer" target="_blank">Font Awesome</a> 提供的图标， Font Awesome 提供了 600+ 的图标，可以满足绝大的多数的场景，同时无须担心在 <code>Retina</code>屏幕下 图标模糊的问题。</p>
 <p>编辑<code>主题配置</code>文件，修改以下内容:</p>
 <ol>
 <li><p>设定菜单内容，对应的字段是 <code>menu</code>。 菜单内容的设置格式是：<code>item name: link</code>。其中 <code>item name</code>是一个名称，这个名称并不直接显示在页面上，她将用于匹配图标以及翻译。</p>
@@ -258,7 +258,7 @@
 <ul>
 <li><p><code>false</code>：禁用 <code>RSS</code>，不在页面上显示 <code>RSS</code> 连接。</p>
 </li>
-<li><p>留空：使用 <code>Hexo</code> 生成的<code>Feed</code> 链接。 你可以需要先安装 <a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="external">hexo-generator-feed</a> 插件。</p>
+<li><p>留空：使用 <code>Hexo</code> 生成的<code>Feed</code> 链接。 你可以需要先安装 <a href="https://github.com/hexojs/hexo-generator-feed" rel="external nofollow noopener noreferrer" target="_blank">hexo-generator-feed</a> 插件。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-feed --save</div></pre></td></tr></table></figure>
 </li>
 <li><p>具体的链接地址：适用于已经烧制过 Feed 的情形。</p>
@@ -270,7 +270,7 @@
 <p>以上为实心圆，如需要调整到和文章页面相同的空心圆，修改为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ul &#123;</div><div class="line">list-style-type: circle;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="头像旋转"><a href="#头像旋转" class="headerlink" title="头像旋转"></a>头像旋转</h3><p>替换<code>\themes\next\source\css\_common\components\sidebar\sidebar-author.styl</code> 文件为下面的文件</p>
-<p><code>sidebar-author.styl</code> <a href="https://github.com/ehlxr/useful-code/blob/master/resources/sidebar-author.styl" target="_blank" rel="external">https://github.com/ehlxr/useful-code/blob/master/resources/sidebar-author.styl</a></p>
+<p><code>sidebar-author.styl</code> <a href="https://github.com/ehlxr/useful-code/blob/master/resources/sidebar-author.styl" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/ehlxr/useful-code/blob/master/resources/sidebar-author.styl</a></p>
 <h3 id="文章底部的那个带-号的标签"><a href="#文章底部的那个带-号的标签" class="headerlink" title="文章底部的那个带#号的标签"></a>文章底部的那个带#号的标签</h3><p>文章底部的那个带<code>#</code>号的标签，比如<code>#NexT</code>，可以把<code>#</code>换成图标。<br>修改模板 <code>layout/_macro/post.swig</code>，搜索 <code>rel=&quot;tag&quot;&gt;#</code>，将 # 换成 ``</p>
 <h3 id="网站标题优化"><a href="#网站标题优化" class="headerlink" title="网站标题优化"></a>网站标题优化</h3><p>更改 <code>index.swig</code> 文件，文件路径是 <code>your-hexo-site\themes\next\layout</code> ，将下面代码</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;% block title %&#125; &#123;&#123; config.title &#125;&#125; &#123;% endblock %&#125;</div></pre></td></tr></table></figure>
@@ -312,13 +312,13 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">这个勤奋的家伙又更新了: &#123;&#123; now(\&apos;YYYY-MM-DD HH:mm:ss\&apos;) &#125;&#125;.</div></pre></td></tr></table></figure>
 <h3 id="背景效果"><a href="#背景效果" class="headerlink" title="背景效果"></a>背景效果</h3><p>背景动态效果图和点击小红心效果的相关设置。</p>
 <p>在<code>\themes\next\source\js\src</code>文件目录下新建<code>love.js</code>和<code>particle.js</code>。</p>
-<p><code>love.js</code> <a href="https://github.com/aiyouweiya/aiyouweiya.github.io/blob/master/js/src/love.js" target="_blank" rel="external">https://github.com/aiyouweiya/aiyouweiya.github.io/blob/master/js/src/love.js</a></p>
-<p><code>particle.js</code> <a href="https://github.com/aiyouweiya/aiyouweiya.github.io/blob/master/js/src/particle.js" target="_blank" rel="external">https://github.com/aiyouweiya/aiyouweiya.github.io/blob/master/js/src/particle.js</a></p>
+<p><code>love.js</code> <a href="https://github.com/aiyouweiya/aiyouweiya.github.io/blob/master/js/src/love.js" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/aiyouweiya/aiyouweiya.github.io/blob/master/js/src/love.js</a></p>
+<p><code>particle.js</code> <a href="https://github.com/aiyouweiya/aiyouweiya.github.io/blob/master/js/src/particle.js" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/aiyouweiya/aiyouweiya.github.io/blob/master/js/src/particle.js</a></p>
 <p>找到<code>\themes\next\layout\_layout.swig</code>文件，在<code>末尾</code>添加以下 js 引入代码：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 背景动画 --&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/particle.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;!-- 页面点击小红心 --&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/love.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
 <h3 id="开启打赏功能"><a href="#开启打赏功能" class="headerlink" title="开启打赏功能"></a>开启打赏功能</h3><p>只需要 <code>主题配置</code>文件 中填入 <code>微信</code>和 <code>支付宝</code> 收款二维码图片地址 即可开启该功能。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！</div><div class="line">wechatpay: /path/to/wechat-reward-image</div><div class="line">alipay: /path/to/alipay-reward-image</div></pre></td></tr></table></figure>
-<h3 id="博文置顶"><a href="#博文置顶" class="headerlink" title="博文置顶"></a>博文置顶</h3><p>替换文件：<code>node_modules/hexo-generator-index/lib/generator.js</code> 为：<a href="https://github.com/ehlxr/useful-code/blob/master/resources/generator.js" target="_blank" rel="external">generator.js</a></p>
+<h3 id="博文置顶"><a href="#博文置顶" class="headerlink" title="博文置顶"></a>博文置顶</h3><p>替换文件：<code>node_modules/hexo-generator-index/lib/generator.js</code> 为：<a href="https://github.com/ehlxr/useful-code/blob/master/resources/generator.js" rel="external nofollow noopener noreferrer" target="_blank">generator.js</a></p>
 <p>在文章 <code>Front-matter</code> 中添加 <code>top</code> 值，数值越大文章越靠前，如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">top: 10</div><div class="line">---</div></pre></td></tr></table></figure>
 <h3 id="图片模式"><a href="#图片模式" class="headerlink" title="图片模式"></a>图片模式</h3><p>1.新建博文，设置<code>type: &quot;picture&quot;</code>，使用<code>{\% gp x-x \%} ... {\% endgp \%}</code>标签引用要展示的图片地址，如下所示：</p>
@@ -332,7 +332,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">&#123;% if theme.WordCount %&#125;</div><div class="line">&#123;# 字数统计 WordCount #&#125;</div><div class="line">&lt;span class=&quot;post-count&quot;&gt;</div><div class="line">  &amp;nbsp; | &amp;nbsp;</div><div class="line">  &lt;span class=&quot;post-meta-item-icon&quot;&gt;</div><div class="line">    &lt;i class=&quot;fa fa-calendar-o&quot;&gt;&lt;/i&gt;</div><div class="line">  &lt;/span&gt;</div><div class="line">  &lt;span class=&quot;post-meta-item-text&quot;&gt;&#123;&#123; __(&apos;post.WordCount&apos;) &#125;&#125;&lt;/span&gt;</div><div class="line">  &lt;span class=&quot;post-meta-item-text&quot;&gt;&#123;&#123; wordcount(post.content) &#125;&#125;&lt;/span&gt;</div><div class="line">&lt;/span&gt;</div><div class="line">&#123;# 阅读时长预计 Min2Read #&#125;</div><div class="line">&lt;span class=&quot;post-count&quot;&gt;</div><div class="line">  &amp;nbsp; | &amp;nbsp;</div><div class="line">  &lt;span class=&quot;post-meta-item-icon&quot;&gt;</div><div class="line">    &lt;i class=&quot;fa fa-calendar-o&quot;&gt;&lt;/i&gt;</div><div class="line">  &lt;/span&gt;</div><div class="line">  &lt;span class=&quot;post-meta-item-text&quot;&gt;&#123;&#123; __(&apos;post.Min2Read&apos;) &#125;&#125;&lt;/span&gt;</div><div class="line">  &lt;span class=&quot;post-meta-item-text&quot;&gt;&#123;&#123; min2read(post.content) &#125;&#125;&amp;nbsp;m&lt;/span&gt;</div><div class="line">&lt;/span&gt;</div><div class="line">&#123;# 总字数统计 TotalCount</div><div class="line">&lt;span class=&quot;post-count&quot;&gt;</div><div class="line">  &amp;nbsp; | &amp;nbsp;</div><div class="line">  &lt;span class=&quot;post-meta-item-icon&quot;&gt;</div><div class="line">    &lt;i class=&quot;fa fa-calendar-o&quot;&gt;&lt;/i&gt;</div><div class="line">  &lt;/span&gt;</div><div class="line">  &lt;span class=&quot;post-meta-item-text&quot;&gt;&#123;&#123; __(&apos;post.TotalCount&apos;) &#125;&#125;&lt;/span&gt;</div><div class="line">  &lt;span class=&quot;&quot;&gt;&#123;&#123; totalcount(site, &apos;0,0.0a&apos;) &#125;&#125;&lt;/span&gt;</div><div class="line">&lt;/span&gt;</div><div class="line">#&#125;</div><div class="line">&#123;% endif %&#125;</div></pre></td></tr></table></figure>
 <p>在主题配置文件中 <strong>_config.yml </strong>,添加<strong> WordCount </strong>属性</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 是否开启字数统计</div><div class="line">WordCount: true</div></pre></td></tr></table></figure>
-<h3 id="Fork-me-on-GitHub"><a href="#Fork-me-on-GitHub" class="headerlink" title="Fork me on GitHub"></a>Fork me on GitHub</h3><p>在 <a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="external">https://github.com/blog/273-github-ribbons</a> 挑选你中意的样式，复制代码到剪切板。</p>
+<h3 id="Fork-me-on-GitHub"><a href="#Fork-me-on-GitHub" class="headerlink" title="Fork me on GitHub"></a>Fork me on GitHub</h3><p>在 <a href="https://github.com/blog/273-github-ribbons" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/blog/273-github-ribbons</a> 挑选你中意的样式，复制代码到剪切板。</p>
 <p>打开<code>\themes\next\layout\_layout.swig</code>，找到如下代码块，插入剪切板代码。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;&#123;&#123; container_class &#125;&#125; &#123;% block page_class %&#125;&#123;% endblock %&#125; &quot;&gt;</div><div class="line">    &lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;!--这里插入剪切板的代码--&gt;</div></pre></td></tr></table></figure>
 <h3 id="文章短链接"><a href="#文章短链接" class="headerlink" title="文章短链接"></a>文章短链接</h3><p>中文路径对于搜索引擎优化非常的不友好，为了解决这个问题，给大家一款插件<code>abbrlink</code>，能够自动生成文章的短链接。</p>
@@ -358,32 +358,32 @@
 <h2 id="集成第三方服务"><a href="#集成第三方服务" class="headerlink" title="集成第三方服务"></a>集成第三方服务</h2><h3 id="多说评论"><a href="#多说评论" class="headerlink" title="多说评论"></a>多说评论</h3><p>使用多说前需要先在 多说 创建一个站点。具体步骤如下：</p>
 <p>登录后在首页选择 “我要安装”。</p>
 <p>创建站点，填写站点相关信息。 <strong>多说域名</strong> 这一栏填写的即是你的 <code>duoshuo_shortname</code>，如图：</p>
-<p><a href="http://olb41wiaa.bkt.clouddn.com/duoshuo-create-site.png" target="_blank" rel="external"><img src="http://olb41wiaa.bkt.clouddn.com/duoshuo-create-site.png" alt="img"></a></p>
+<p><a href="http://olb41wiaa.bkt.clouddn.com/duoshuo-create-site.png" rel="external nofollow noopener noreferrer" target="_blank"><img src="http://olb41wiaa.bkt.clouddn.com/duoshuo-create-site.png" alt="img"></a></p>
 <p>创建站点完成后在 <code>站点配置</code>文件 中新增 <code>duoshuo_shortname</code> 字段，值设置成上一步中的值。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">duoshuo_shortname: aiyouweiya</div></pre></td></tr></table></figure>
 <h3 id="多说评论显示-UA"><a href="#多说评论显示-UA" class="headerlink" title="多说评论显示 UA"></a>多说评论显示 UA</h3><p>在每一条多说评论后显示评论者所使用的代理信息（如 操作系统、浏览器），效果如下：</p>
-<p><a href="http://olb41wiaa.bkt.clouddn.com/duoshuo-ua.png" target="_blank" rel="external"><img src="http://olb41wiaa.bkt.clouddn.com/duoshuo-ua.png" alt="img"></a></p>
+<p><a href="http://olb41wiaa.bkt.clouddn.com/duoshuo-ua.png" rel="external nofollow noopener noreferrer" target="_blank"><img src="http://olb41wiaa.bkt.clouddn.com/duoshuo-ua.png" alt="img"></a></p>
 <p>要启用此功能，需要配置 <code>duoshuo_info</code> 这个字段。 编辑 <code>主题配置</code>文件，查找 <code>duoshuo_info</code> 字段， 设置如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"># Make duoshuo show UA</div><div class="line"># user_id must NOT be null when admin_enable is true!</div><div class="line"># you can visit http://dev.duoshuo.com get duoshuo user id.</div><div class="line">duoshuo_info:</div><div class="line">  ua_enable: true</div><div class="line">  admin_enable: false</div><div class="line">  user_id:</div><div class="line">  admin_nickname:</div></pre></td></tr></table></figure>
-<p>只要设置 <code>ua_enable</code> 为 <code>true</code> 即可显示 UA 信息。 <code>admin_enable</code> 是用于显示 「博主」 文字，表明评论者是博主，此字段需要同时配置 <code>user_id</code> 和 <code>admin_nickname</code> 字段。 请访问 <a href="http://dev.duoshuo.com/" target="_blank" rel="external">多说</a>，登录并访问「我的主页」获取 <code>user_id</code> ， 此 ID 是 网址最后那串数字。</p>
+<p>只要设置 <code>ua_enable</code> 为 <code>true</code> 即可显示 UA 信息。 <code>admin_enable</code> 是用于显示 「博主」 文字，表明评论者是博主，此字段需要同时配置 <code>user_id</code> 和 <code>admin_nickname</code> 字段。 请访问 <a href="http://dev.duoshuo.com/" rel="external nofollow noopener noreferrer" target="_blank">多说</a>，登录并访问「我的主页」获取 <code>user_id</code> ， 此 ID 是 网址最后那串数字。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">duoshuo_info:</div><div class="line">  ua_enable: true</div><div class="line">  admin_enable: true</div><div class="line">  user_id: 1234567</div><div class="line">  admin_nickname: 主编大人</div></pre></td></tr></table></figure>
 <h3 id="百度统计"><a href="#百度统计" class="headerlink" title="百度统计"></a>百度统计</h3><p><strong>注意</strong>： <code>baidu_analytics</code> 不是你的<code>百度 id</code> 或者<code>百度统计 id</code></p>
-<p>登录 <a href="http://tongji.baidu.com/" target="_blank" rel="external">百度统计</a>， 定位到站点的代码获取页面</p>
+<p>登录 <a href="http://tongji.baidu.com/" rel="external nofollow noopener noreferrer" target="_blank">百度统计</a>， 定位到站点的代码获取页面</p>
 <p>复制 <code>hm.js?</code> 后面那串统计脚本 id，如：</p>
-<p><a href="http://olb41wiaa.bkt.clouddn.com/analytics-baidu-id.png" target="_blank" rel="external"><img src="http://olb41wiaa.bkt.clouddn.com/analytics-baidu-id.png" alt="img"></a></p>
+<p><a href="http://olb41wiaa.bkt.clouddn.com/analytics-baidu-id.png" rel="external nofollow noopener noreferrer" target="_blank"><img src="http://olb41wiaa.bkt.clouddn.com/analytics-baidu-id.png" alt="img"></a></p>
 <p>编辑<code>站点配置</code>文件， 新增字段 <code>baidu_analytics</code> 字段，值设置成你的百度统计脚本 id</p>
-<h3 id="阅读次数统计（LeanCloud"><a href="#阅读次数统计（LeanCloud" class="headerlink" title="阅读次数统计（LeanCloud)"></a>阅读次数统计（LeanCloud)</h3><p>在<a href="https://leancloud.cn/dashboard/login.html#/signup" target="_blank" rel="external">LeanCloud</a>注册帐号并验证邮箱之后，我们就可以登录我们的<code>LeanCloud</code>帐号，进行一番配置之后拿到<code>AppID</code>以及<code>AppKey</code>这两个参数即可正常使用文章阅读量统计的功能了。</p>
+<h3 id="阅读次数统计（LeanCloud"><a href="#阅读次数统计（LeanCloud" class="headerlink" title="阅读次数统计（LeanCloud)"></a>阅读次数统计（LeanCloud)</h3><p>在<a href="https://leancloud.cn/dashboard/login.html#/signup" rel="external nofollow noopener noreferrer" target="_blank">LeanCloud</a>注册帐号并验证邮箱之后，我们就可以登录我们的<code>LeanCloud</code>帐号，进行一番配置之后拿到<code>AppID</code>以及<code>AppKey</code>这两个参数即可正常使用文章阅读量统计的功能了。</p>
 <p>注册完成后登陆来到这里创建应用，图中的是我已经创建好的一个。</p>
-<p><a href="http://olb41wiaa.bkt.clouddn.com/leancloud1.png" target="_blank" rel="external"><img src="http://olb41wiaa.bkt.clouddn.com/leancloud1.png" alt="img"></a></p>
+<p><a href="http://olb41wiaa.bkt.clouddn.com/leancloud1.png" rel="external nofollow noopener noreferrer" target="_blank"><img src="http://olb41wiaa.bkt.clouddn.com/leancloud1.png" alt="img"></a></p>
 <p>以<code>test</code>为例创建一个应用，选择开发版即可</p>
-<p><a href="http://olb41wiaa.bkt.clouddn.com/leancloud2.png" target="_blank" rel="external"><img src="http://olb41wiaa.bkt.clouddn.com/leancloud2.png" alt="img"></a></p>
+<p><a href="http://olb41wiaa.bkt.clouddn.com/leancloud2.png" rel="external nofollow noopener noreferrer" target="_blank"><img src="http://olb41wiaa.bkt.clouddn.com/leancloud2.png" alt="img"></a></p>
 <p>创建完成后点击存储，进入程序目录界面。</p>
-<p><a href="http://olb41wiaa.bkt.clouddn.com/leancloud3.png" target="_blank" rel="external"><img src="http://olb41wiaa.bkt.clouddn.com/leancloud3.png" alt="img"></a></p>
+<p><a href="http://olb41wiaa.bkt.clouddn.com/leancloud3.png" rel="external nofollow noopener noreferrer" target="_blank"><img src="http://olb41wiaa.bkt.clouddn.com/leancloud3.png" alt="img"></a></p>
 <p>在弹出的选项中选择<code>创建Class</code>来新建<code>Class</code>用来专门保存我们博客的文章访问量等数据</p>
-<p><a href="http://olb41wiaa.bkt.clouddn.com/leancloud4.png" target="_blank" rel="external"><img src="http://olb41wiaa.bkt.clouddn.com/leancloud4.png" alt="img"></a></p>
+<p><a href="http://olb41wiaa.bkt.clouddn.com/leancloud4.png" rel="external nofollow noopener noreferrer" target="_blank"><img src="http://olb41wiaa.bkt.clouddn.com/leancloud4.png" alt="img"></a></p>
 <p>这里取名<code>Counter</code>，由于<code>LeanCloud</code>升级了默认的<code>ACL</code>权限，如果你想避免后续因为权限的问题导致次数统计显示不正常，建议在此处选择<code>无限制</code></p>
-<p><a href="http://olb41wiaa.bkt.clouddn.com/leancloud5.png" target="_blank" rel="external"><img src="http://olb41wiaa.bkt.clouddn.com/leancloud5.png" alt="img"></a></p>
-<p>回到控制台，点击设置，查看应用<code>Key</code>。<a href="http://olb41wiaa.bkt.clouddn.com/leancloud6.jpg" target="_blank" rel="external"><img src="http://olb41wiaa.bkt.clouddn.com/leancloud6.jpg" alt="img"></a></p>
+<p><a href="http://olb41wiaa.bkt.clouddn.com/leancloud5.png" rel="external nofollow noopener noreferrer" target="_blank"><img src="http://olb41wiaa.bkt.clouddn.com/leancloud5.png" alt="img"></a></p>
+<p>回到控制台，点击设置，查看应用<code>Key</code>。<a href="http://olb41wiaa.bkt.clouddn.com/leancloud6.jpg" rel="external nofollow noopener noreferrer" target="_blank"><img src="http://olb41wiaa.bkt.clouddn.com/leancloud6.jpg" alt="img"></a></p>
 <p>复制<code>AppID</code>以及<code>AppKey</code>并在<code>NexT</code>主题的<code>_config.yml</code>文件中我们相应的位置填入即可，正确配置之后文件内容像这个样子:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">leancloud_visitors:</div><div class="line">  enable: true</div><div class="line">  app_id: App ID</div><div class="line">  app_key: App Key</div></pre></td></tr></table></figure>
 <p>这个时候重新生成部署<code>Hexo</code>博客，应该就可以正常使用文章阅读量统计的功能了。需要特别说明的是：记录文章访问量的唯一标识符是文章的<code>发布日期</code>以及<code>文章的标题</code>，因此请确保这两个数值组合的唯一性，如果你更改了这两个数值，会造成文章阅读数值的清零重计。</p>
@@ -399,16 +399,16 @@
 <h3 id="MathJax"><a href="#MathJax" class="headerlink" title="MathJax"></a>MathJax</h3><p><code>NexT</code>借助于 <code>MathJax</code>来显示数学公式，此选项默认关闭。</p>
 <p>编辑 <code>主题配置</code>文件，将 <code>mathjax</code> 设定为 <code>true</code> 即可。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># MathJax Support</div><div class="line">mathjax: true</div></pre></td></tr></table></figure>
-<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p><strong>夏末</strong> :<a href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud" target="_blank" rel="external">为NexT主题添加文章阅读量统计功能</a></p>
-<p><strong>Next官网</strong>: <a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html</a></p>
-<p><strong>lancelot_lewis</strong>: <a href="http://www.jianshu.com/p/f2cfc95cab4e" target="_blank" rel="external">http://www.jianshu.com/p/f2cfc95cab4e</a></p>
-<p><strong>Aixiu</strong>: <a href="http://blog.ynxiu.com/2016/hexo-next-theme-optimize.html" target="_blank" rel="external">http://blog.ynxiu.com/2016/hexo-next-theme-optimize.html</a></p>
+<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p><strong>夏末</strong> :<a href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud" rel="external nofollow noopener noreferrer" target="_blank">为NexT主题添加文章阅读量统计功能</a></p>
+<p><strong>Next官网</strong>: <a href="http://theme-next.iissnan.com/getting-started.html" rel="external nofollow noopener noreferrer" target="_blank">http://theme-next.iissnan.com/getting-started.html</a></p>
+<p><strong>lancelot_lewis</strong>: <a href="http://www.jianshu.com/p/f2cfc95cab4e" rel="external nofollow noopener noreferrer" target="_blank">http://www.jianshu.com/p/f2cfc95cab4e</a></p>
+<p><strong>Aixiu</strong>: <a href="http://blog.ynxiu.com/2016/hexo-next-theme-optimize.html" rel="external nofollow noopener noreferrer" target="_blank">http://blog.ynxiu.com/2016/hexo-next-theme-optimize.html</a></p>
 <p>……</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Next主题安装&quot;&gt;&lt;a href=&quot;#Next主题安装&quot; class=&quot;headerlink&quot; title=&quot;Next主题安装&quot;&gt;&lt;/a&gt;Next主题安装&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Next&lt;/code&gt;是我用的第一款主题，精于心简于形的灵感，响应式的设计，还可以高度自由定制，体验起来真的是超级无敌爽！！关于&lt;code&gt;Next&lt;/code&gt;的介绍大家可以参考官网 &lt;a href=&quot;http://theme-next.iissnan.com/&quot;&gt;http://theme-next.iissnan.com/&lt;/a&gt; 。&lt;/p&gt;
+      &lt;h2 id=&quot;Next主题安装&quot;&gt;&lt;a href=&quot;#Next主题安装&quot; class=&quot;headerlink&quot; title=&quot;Next主题安装&quot;&gt;&lt;/a&gt;Next主题安装&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Next&lt;/code&gt;是我用的第一款主题，精于心简于形的灵感，响应式的设计，还可以高度自由定制，体验起来真的是超级无敌爽！！关于&lt;code&gt;Next&lt;/code&gt;的介绍大家可以参考官网 &lt;a href=&quot;http://theme-next.iissnan.com/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;http://theme-next.iissnan.com/&lt;/a&gt; 。&lt;/p&gt;
 &lt;p&gt;在 &lt;code&gt;Hexo&lt;/code&gt;中有两份主要的配置文件，其名称都是 &lt;code&gt;_config.yml&lt;/code&gt;。 其中，一份位于站点根目录下，称为 &lt;code&gt;站点配置文件&lt;/code&gt;，主要包含 &lt;code&gt;Hexo&lt;/code&gt;本身的配置；另一份位于主题目录下，称为 &lt;code&gt;主题配置文件&lt;/code&gt;，这份配置由主题作者提供，主要用于配置主题相关的选项。&lt;/p&gt;
     
     </summary>
@@ -427,20 +427,20 @@
     <published>2017-02-15T16:00:00.000Z</published>
     <updated>2017-02-25T08:59:15.690Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p><code>Node.js</code> <a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></p>
-<p><code>Node.js国内镜像</code> <a href="https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs" target="_blank" rel="external">https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs</a> </p>
+    <content type="html"><![CDATA[<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p><code>Node.js</code> <a href="https://nodejs.org/en/" rel="external nofollow noopener noreferrer" target="_blank">https://nodejs.org/en/</a></p>
+<p><code>Node.js国内镜像</code> <a href="https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs" rel="external nofollow noopener noreferrer" target="_blank">https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs</a> </p>
 <p>一路下一步安装，注意请勾选<strong>Add to PATH</strong>选项。</p>
 <a id="more"></a>
 <h2 id="安装windows-node-deps-deleter"><a href="#安装windows-node-deps-deleter" class="headerlink" title="安装windows-node-deps-deleter"></a>安装windows-node-deps-deleter</h2><p>打开命令提示符，输入以下命令来安装<code>windows-node-deps-deleter</code>。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g windows-node-deps-deleter</div></pre></td></tr></table></figure>
 <h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wnddel dir1 <span class="comment">#dir1为你要删除的文件路径，文件夹路径也可以</span></div></pre></td></tr></table></figure>
-<p>关于<code>windows-node-deps-deleter</code>的介绍大家可以参考官网 <a href="https://www.npmjs.com/package/windows-node-deps-deleter" target="_blank" rel="external">https://www.npmjs.com/package/windows-node-deps-deleter</a> 。</p>
+<p>关于<code>windows-node-deps-deleter</code>的介绍大家可以参考官网 <a href="https://www.npmjs.com/package/windows-node-deps-deleter" rel="external nofollow noopener noreferrer" target="_blank">https://www.npmjs.com/package/windows-node-deps-deleter</a> 。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;安装Node-js&quot;&gt;&lt;a href=&quot;#安装Node-js&quot; class=&quot;headerlink&quot; title=&quot;安装Node.js&quot;&gt;&lt;/a&gt;安装Node.js&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Node.js&lt;/code&gt; &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;https://nodejs.org/en/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Node.js国内镜像&lt;/code&gt; &lt;a href=&quot;https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs&quot;&gt;https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs&lt;/a&gt; &lt;/p&gt;
+      &lt;h2 id=&quot;安装Node-js&quot;&gt;&lt;a href=&quot;#安装Node-js&quot; class=&quot;headerlink&quot; title=&quot;安装Node.js&quot;&gt;&lt;/a&gt;安装Node.js&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Node.js&lt;/code&gt; &lt;a href=&quot;https://nodejs.org/en/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;https://nodejs.org/en/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Node.js国内镜像&lt;/code&gt; &lt;a href=&quot;https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs&lt;/a&gt; &lt;/p&gt;
 &lt;p&gt;一路下一步安装，注意请勾选&lt;strong&gt;Add to PATH&lt;/strong&gt;选项。&lt;/p&gt;
     
     </summary>
@@ -459,15 +459,15 @@
     <published>2017-02-14T16:00:00.000Z</published>
     <updated>2017-02-25T09:14:34.839Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="什么是Hexo？"><a href="#什么是Hexo？" class="headerlink" title="什么是Hexo？"></a>什么是Hexo？</h2><p><code>Hexo</code> 是一个快速、简洁且高效的博客框架。<code>Hexo</code> 使用<code>Markdwon</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p><p style="text-align:right;">    —— <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">文档 | Hexo </a>  —— </p><p></p>
+    <content type="html"><![CDATA[<h2 id="什么是Hexo？"><a href="#什么是Hexo？" class="headerlink" title="什么是Hexo？"></a>什么是Hexo？</h2><p><code>Hexo</code> 是一个快速、简洁且高效的博客框架。<code>Hexo</code> 使用<code>Markdwon</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p><p style="text-align:right;">    —— <a href="https://hexo.io/zh-cn/docs/index.html" rel="external nofollow noopener noreferrer" target="_blank">文档 | Hexo </a>  —— </p><p></p>
 <a id="more"></a>
 <h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><ul>
-<li><code>有梯子</code><a href="https://git-scm.com/download/win" target="_blank" rel="external">https://git-scm.com/download/win</a> </li>
-<li><code>无梯子</code>  <a href="https://github.com/waylau/git-for-win" target="_blank" rel="external">https://github.com/waylau/git-for-win</a></li>
+<li><code>有梯子</code><a href="https://git-scm.com/download/win" rel="external nofollow noopener noreferrer" target="_blank">https://git-scm.com/download/win</a> </li>
+<li><code>无梯子</code>  <a href="https://github.com/waylau/git-for-win" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/waylau/git-for-win</a></li>
 </ul>
 <p>一路下一步安装，安装完成需要做一下简单的配置，在任意位置右键鼠标，你会发现条目中多出几个与<code>Git</code>相关的条目。其中<code>Git Bash Here</code>使用最为普遍，他提供一种类似<code>Linux Shell</code>的风格。</p>
-<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p><code>Node.js</code> <a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></p>
-<p><code>Node.js国内镜像</code> <a href="https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs" target="_blank" rel="external">https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs</a> </p>
+<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p><code>Node.js</code> <a href="https://nodejs.org/en/" rel="external nofollow noopener noreferrer" target="_blank">https://nodejs.org/en/</a></p>
+<p><code>Node.js国内镜像</code> <a href="https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs" rel="external nofollow noopener noreferrer" target="_blank">https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fnodejs</a> </p>
 <p>也是一路下一步安装，注意请勾选<strong>Add to PATH</strong>选项。</p>
 <h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>在任意位置右键，选择<code>Git Bash Here</code>，执行以下命令进行安装，安装过程可能会比较慢，请耐心等待。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
@@ -485,14 +485,14 @@
 <h3 id="选择编辑工具"><a href="#选择编辑工具" class="headerlink" title="选择编辑工具"></a>选择编辑工具</h3><p>那么首先我们应该选择一款心仪的编辑工具来编写博客了，下面是比较知名的几款编辑工具：</p>
 <ul>
 <li><p>在线编辑</p>
-<p><code>MaHua</code><a href="http://mahua.jser.me/" target="_blank" rel="external">http://mahua.jser.me/</a></p>
-<p><code>简书</code> <a href="http://www.jianshu.com/" target="_blank" rel="external">http://www.jianshu.com/</a> </p>
-<p><code>Cmd Markdown 在线版</code> <a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">https://www.zybuluo.com/mdeditor</a>  </p>
+<p><code>MaHua</code><a href="http://mahua.jser.me/" rel="external nofollow noopener noreferrer" target="_blank">http://mahua.jser.me/</a></p>
+<p><code>简书</code> <a href="http://www.jianshu.com/" rel="external nofollow noopener noreferrer" target="_blank">http://www.jianshu.com/</a> </p>
+<p><code>Cmd Markdown 在线版</code> <a href="https://www.zybuluo.com/mdeditor" rel="external nofollow noopener noreferrer" target="_blank">https://www.zybuluo.com/mdeditor</a>  </p>
 </li>
 <li><p>本地编辑</p>
-<p><code>Typora</code> <a href="https://typora.io/" target="_blank" rel="external">https://typora.io/</a> </p>
-<p><code>Cmd Markdown 客户端</code> <a href="https://www.zybuluo.com/cmd/" target="_blank" rel="external">https://www.zybuluo.com/cmd/</a> </p>
-<p><code>马克飞象</code> <a href="https://pan.baidu.com/s/1sl7tx29#list/path=%2F" target="_blank" rel="external">https://pan.baidu.com/s/1sl7tx29#list/path=%2F</a></p>
+<p><code>Typora</code> <a href="https://typora.io/" rel="external nofollow noopener noreferrer" target="_blank">https://typora.io/</a> </p>
+<p><code>Cmd Markdown 客户端</code> <a href="https://www.zybuluo.com/cmd/" rel="external nofollow noopener noreferrer" target="_blank">https://www.zybuluo.com/cmd/</a> </p>
+<p><code>马克飞象</code> <a href="https://pan.baidu.com/s/1sl7tx29#list/path=%2F" rel="external nofollow noopener noreferrer" target="_blank">https://pan.baidu.com/s/1sl7tx29#list/path=%2F</a></p>
 </li>
 </ul>
 <p>这几款编辑器都各有各的优缺点吧，有实用的，有耐看的，有<code>Geek</code>的，孰优孰略大家可以都尝试看看，我自己使用的是<code>Typora</code>。</p>
@@ -503,7 +503,7 @@
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean <span class="comment">#清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span></div><div class="line">hexo generate <span class="comment">#生成静态文件</span></div><div class="line">hexo server <span class="comment">#开启服务器</span></div></pre></td></tr></table></figure>
 <p>浏览器输入<code>http://127.0.0.1:4000</code>就可以看到一下效果。（亲测，不要使用微软家的浏览器）。预览完毕后<code>Ctrl+C</code>关闭服务器。</p>
 <h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><p>以上过程就是本地编辑、预览的全部过程了，接下来我们要将文章托管到<code>Github</code>上，以供其他人可以访问。</p>
-<h3 id="注册Github账号"><a href="#注册Github账号" class="headerlink" title="注册Github账号"></a>注册Github账号</h3><p>在 <a href="https://github.com/" target="_blank" rel="external">https://github.com/</a> 注册你的账号，<code>用户名</code>和<code>邮箱</code>比较重要，想好了再填，其他的也没什么好说的，比较简单。</p>
+<h3 id="注册Github账号"><a href="#注册Github账号" class="headerlink" title="注册Github账号"></a>注册Github账号</h3><p>在 <a href="https://github.com/" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/</a> 注册你的账号，<code>用户名</code>和<code>邮箱</code>比较重要，想好了再填，其他的也没什么好说的，比较简单。</p>
 <h3 id="创建代码仓库"><a href="#创建代码仓库" class="headerlink" title="创建代码仓库"></a>创建代码仓库</h3><p>第一次创建仓库时会要求你验证邮箱，去邮箱里面验证一下就好了。下面我们创建一个代码仓库作为博客的容器，仓库的名字必须是<code>yourusername.github.io</code>，创建完成后在浏览器敲入<code>yourusername.github.io</code>就可以看到效果，不过比较简陋，因为现在仓库还是空的。</p>
 <h3 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name <span class="string">"Your Name"</span> <span class="comment"># 刚刚注册的用户名</span></div><div class="line">$ git config --global user.email <span class="string">"email@example.com"</span> <span class="comment"># 刚刚注册的邮箱</span></div></pre></td></tr></table></figure>
 <h3 id="生成密钥"><a href="#生成密钥" class="headerlink" title="生成密钥"></a>生成密钥</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C <span class="string">"email@example.com"</span> <span class="comment"># 生成密钥</span></div><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file <span class="keyword">in</span> which to save the key (<span class="regexp">/c/</span>Documents <span class="keyword">and</span> Settings/Administrator/.ssh/id_rsa): <span class="comment"># 在此目录下保存密钥</span></div><div class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase): <span class="comment"># 读取密钥的密码（非常重要，设置时要小心）</span></div><div class="line">Enter same passphrase <span class="symbol">again:</span></div><div class="line">Your identification has been saved <span class="keyword">in</span> /c/Documents <span class="keyword">and</span> Settings/Administrator/.ssh/id_rsa.</div><div class="line">Your public key has been saved <span class="keyword">in</span> /c/Documents <span class="keyword">and</span> Settings/Administrator/.ssh/id_rsa.pub.</div></pre></td></tr></table></figure>
@@ -522,13 +522,13 @@
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本片博客主要介绍了<code>Hexo</code>搭建博客的过程，包括<code>环境准备</code>，<code>搭建框架</code>，<code>创作博客</code>，<code>本地预览</code>，<code>部署到Github</code>，这样的几个步骤。</p>
 <p>最后的最后这几个命令要牢记，因为这几个命令就是大体的流程了。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo server</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
-<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p><code>量子广告:</code> <a href="http://blog.ynxiu.com/2016/hexo-you-blog.html" target="_blank" rel="external">http://blog.ynxiu.com/2016/hexo-you-blog.html</a></p>
-<p><code>西山雨:</code> <a href="https://segmentfault.com/a/1190000002645623" target="_blank" rel="external">https://segmentfault.com/a/1190000002645623</a></p>
+<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p><code>量子广告:</code> <a href="http://blog.ynxiu.com/2016/hexo-you-blog.html" rel="external nofollow noopener noreferrer" target="_blank">http://blog.ynxiu.com/2016/hexo-you-blog.html</a></p>
+<p><code>西山雨:</code> <a href="https://segmentfault.com/a/1190000002645623" rel="external nofollow noopener noreferrer" target="_blank">https://segmentfault.com/a/1190000002645623</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;什么是Hexo？&quot;&gt;&lt;a href=&quot;#什么是Hexo？&quot; class=&quot;headerlink&quot; title=&quot;什么是Hexo？&quot;&gt;&lt;/a&gt;什么是Hexo？&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Hexo&lt;/code&gt; 是一个快速、简洁且高效的博客框架。&lt;code&gt;Hexo&lt;/code&gt; 使用&lt;code&gt;Markdwon&lt;/code&gt;（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;p style=&quot;text-align:right;&quot;&gt;    —— &lt;a href=&quot;https://hexo.io/zh-cn/docs/index.html&quot;&gt;文档 | Hexo &lt;/a&gt;  —— &lt;/p&gt;&lt;/p&gt;
+      &lt;h2 id=&quot;什么是Hexo？&quot;&gt;&lt;a href=&quot;#什么是Hexo？&quot; class=&quot;headerlink&quot; title=&quot;什么是Hexo？&quot;&gt;&lt;/a&gt;什么是Hexo？&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Hexo&lt;/code&gt; 是一个快速、简洁且高效的博客框架。&lt;code&gt;Hexo&lt;/code&gt; 使用&lt;code&gt;Markdwon&lt;/code&gt;（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p&gt;&lt;p style=&quot;text-align:right;&quot;&gt;    —— &lt;a href=&quot;https://hexo.io/zh-cn/docs/index.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;文档 | Hexo &lt;/a&gt;  —— &lt;/p&gt;&lt;p&gt;&lt;/p&gt;
     
     </summary>
     
@@ -546,7 +546,7 @@
     <published>2017-02-12T16:00:00.000Z</published>
     <updated>2017-02-25T09:15:05.538Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="什么是WinSCP"><a href="#什么是WinSCP" class="headerlink" title="什么是WinSCP"></a>什么是WinSCP</h2><p><code>WinSCP</code>是一个<code>Windows</code>环境下使用<code>ssh</code>的开源图形化<code>SFTP</code>客户端。同时支持<code>SCP</code>协议。它的主要功能就是在本地与远程计算机间安全的复制文件，提供图形化界面，操作起来十分简单方便。<a href="https://winscp.net/eng/index.php" target="_blank" rel="external">传送门</a></p>
+    <content type="html"><![CDATA[<h2 id="什么是WinSCP"><a href="#什么是WinSCP" class="headerlink" title="什么是WinSCP"></a>什么是WinSCP</h2><p><code>WinSCP</code>是一个<code>Windows</code>环境下使用<code>ssh</code>的开源图形化<code>SFTP</code>客户端。同时支持<code>SCP</code>协议。它的主要功能就是在本地与远程计算机间安全的复制文件，提供图形化界面，操作起来十分简单方便。<a href="https://winscp.net/eng/index.php" rel="external nofollow noopener noreferrer" target="_blank">传送门</a></p>
 <a id="more"></a>
 <h2 id="使用密钥登陆远程主机"><a href="#使用密钥登陆远程主机" class="headerlink" title="使用密钥登陆远程主机"></a>使用密钥登陆远程主机</h2><p><code>WinSCP</code>默认使用密码登陆，这种方式当然，是不安全的，所以我们要设置成密钥登陆</p>
 <p>点击<code>登陆</code>对话框的<code>高级</code>按钮，弹出<code>高级站点设置</code>对话框，<code>SSH--验证--密钥文件</code>，选中之前生成的密钥文件<code>id_rsa</code>即可，程序会自动转换为<code>ppk</code>格式。</p>
@@ -562,7 +562,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;什么是WinSCP&quot;&gt;&lt;a href=&quot;#什么是WinSCP&quot; class=&quot;headerlink&quot; title=&quot;什么是WinSCP&quot;&gt;&lt;/a&gt;什么是WinSCP&lt;/h2&gt;&lt;p&gt;&lt;code&gt;WinSCP&lt;/code&gt;是一个&lt;code&gt;Windows&lt;/code&gt;环境下使用&lt;code&gt;ssh&lt;/code&gt;的开源图形化&lt;code&gt;SFTP&lt;/code&gt;客户端。同时支持&lt;code&gt;SCP&lt;/code&gt;协议。它的主要功能就是在本地与远程计算机间安全的复制文件，提供图形化界面，操作起来十分简单方便。&lt;a href=&quot;https://winscp.net/eng/index.php&quot;&gt;传送门&lt;/a&gt;&lt;/p&gt;
+      &lt;h2 id=&quot;什么是WinSCP&quot;&gt;&lt;a href=&quot;#什么是WinSCP&quot; class=&quot;headerlink&quot; title=&quot;什么是WinSCP&quot;&gt;&lt;/a&gt;什么是WinSCP&lt;/h2&gt;&lt;p&gt;&lt;code&gt;WinSCP&lt;/code&gt;是一个&lt;code&gt;Windows&lt;/code&gt;环境下使用&lt;code&gt;ssh&lt;/code&gt;的开源图形化&lt;code&gt;SFTP&lt;/code&gt;客户端。同时支持&lt;code&gt;SCP&lt;/code&gt;协议。它的主要功能就是在本地与远程计算机间安全的复制文件，提供图形化界面，操作起来十分简单方便。&lt;a href=&quot;https://winscp.net/eng/index.php&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;传送门&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -589,7 +589,7 @@
 </ul>
 <h3 id="密码登录"><a href="#密码登录" class="headerlink" title="密码登录"></a>密码登录</h3><p>假设你是第一次登录远程主机，使用<code>$ ssh ubuntu@xxx.com</code>登录，你会得到</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">The authenticity of host &apos;123.206.198.83 (123.206.198.83)&apos; can&apos;t be established.</div><div class="line">ECDSA key fingerprint is SHA256:P0XOcgjXyTikxaGKzmWsALKUYZPqTftP0KTFoTJnFvs.</div><div class="line">Are you sure you want to continue connecting (yes/no)?</div></pre></td></tr></table></figure>
-<p>意思是：我是你要登陆的远程主机，我的公钥的<code>SHA256</code>指纹是<code>P0XOcgjXyTikxaGKzmWsALKUYZPqTftP0KTFoTJnFvs</code>,你是否要继续连接，此时该主机的公钥指纹是不可信任的（中间人攻击），我们可以将其与远程主机的公钥进行对比（一般是公开的）例如<code>Github公钥</code><a href="https://help.github.com/articles/what-are-github-s-ssh-key-fingerprints/" target="_blank" rel="external">https://help.github.com/articles/what-are-github-s-ssh-key-fingerprints/</a> 如果一致的话就可以确认链接，不是的话就说明存在中间人攻击了。</p>
+<p>意思是：我是你要登陆的远程主机，我的公钥的<code>SHA256</code>指纹是<code>P0XOcgjXyTikxaGKzmWsALKUYZPqTftP0KTFoTJnFvs</code>,你是否要继续连接，此时该主机的公钥指纹是不可信任的（中间人攻击），我们可以将其与远程主机的公钥进行对比（一般是公开的）例如<code>Github公钥</code><a href="https://help.github.com/articles/what-are-github-s-ssh-key-fingerprints/" rel="external nofollow noopener noreferrer" target="_blank">https://help.github.com/articles/what-are-github-s-ssh-key-fingerprints/</a> 如果一致的话就可以确认链接，不是的话就说明存在中间人攻击了。</p>
 <p>当确认连接后，会提示输入密码<code>ubuntu@xxx.com&#39;s password:</code>，此时输入正确的密码即可成功登陆，显示如下</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-53-generic x86_64)</div><div class="line"></div><div class="line"> * Documentation:  https://help.ubuntu.com</div><div class="line"> * Management:     https://landscape.canonical.com</div><div class="line"> * Support:        https://ubuntu.com/advantage</div><div class="line"></div><div class="line">Last login: Mon Feb 13 14:32:03 2017</div><div class="line">ubuntu@VM-37-129-ubuntu:~$</div></pre></td></tr></table></figure>
 <h4 id="中间人攻击"><a href="#中间人攻击" class="headerlink" title="中间人攻击"></a>中间人攻击</h4><p>攻击者与通讯的两端分别建立独立的联系，并交换其所收到的数据，使通讯的两端认为他们正在通过一个私密的连接与对方直接对话，但事实上整个会话都被攻击者完全控制。下面这个例子解释了密码登陆的危险性。</p>
@@ -658,7 +658,7 @@
     <updated>2017-02-26T12:01:34.813Z</updated>
     
     <content type="html"><![CDATA[<h1 id="HTDaYaoFang"><a href="#HTDaYaoFang" class="headerlink" title="HTDaYaoFang"></a>HTDaYaoFang</h1><p>药店管理系统，大二下软件实训项目</p>
-<p>源代码地址：<a href="https://github.com/aiyouweiya/HTDaYaoFang" target="_blank" rel="external">https://github.com/aiyouweiya/HTDaYaoFang</a></p>
+<p>源代码地址：<a href="https://github.com/aiyouweiya/HTDaYaoFang" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/aiyouweiya/HTDaYaoFang</a></p>
 <h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><ul>
 <li>药品销售</li>
 <li>仓库管理</li>
@@ -682,7 +682,7 @@
     <summary type="html">
     
       &lt;h1 id=&quot;HTDaYaoFang&quot;&gt;&lt;a href=&quot;#HTDaYaoFang&quot; class=&quot;headerlink&quot; title=&quot;HTDaYaoFang&quot;&gt;&lt;/a&gt;HTDaYaoFang&lt;/h1&gt;&lt;p&gt;药店管理系统，大二下软件实训项目&lt;/p&gt;
-&lt;p&gt;源代码地址：&lt;a href=&quot;https://github.com/aiyouweiya/HTDaYaoFang&quot;&gt;https://github.com/aiyouweiya/HTDaYaoFang&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;源代码地址：&lt;a href=&quot;https://github.com/aiyouweiya/HTDaYaoFang&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;https://github.com/aiyouweiya/HTDaYaoFang&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;功能&quot;&gt;&lt;a href=&quot;#功能&quot; class=&quot;headerlink&quot; title=&quot;功能&quot;&gt;&lt;/a&gt;功能&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;药品销售&lt;/li&gt;
 &lt;li&gt;仓库管理&lt;/li&gt;
