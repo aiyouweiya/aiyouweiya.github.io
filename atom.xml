@@ -4,9 +4,9 @@
   <subtitle>A Man Walking On The Cable</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="blog.aiyouweiya.xyz/"/>
+  <link href="http://blog.aiyouweiya.xyz/"/>
   <updated>2017-02-25T08:57:40.558Z</updated>
-  <id>blog.aiyouweiya.xyz/</id>
+  <id>http://blog.aiyouweiya.xyz/</id>
   
   <author>
     <name>aiyouweiya</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>让ImageView浮动起来</title>
-    <link href="blog.aiyouweiya.xyz/posts/64620/"/>
-    <id>blog.aiyouweiya.xyz/posts/64620/</id>
+    <link href="http://blog.aiyouweiya.xyz/posts/64620/"/>
+    <id>http://blog.aiyouweiya.xyz/posts/64620/</id>
     <published>2017-02-25T04:19:00.000Z</published>
     <updated>2017-02-25T08:57:40.558Z</updated>
     
@@ -51,19 +51,19 @@
     
     </summary>
     
-      <category term="Android" scheme="blog.aiyouweiya.xyz/categories/Android/"/>
+      <category term="Android" scheme="http://blog.aiyouweiya.xyz/categories/Android/"/>
     
     
-      <category term="Material Design" scheme="blog.aiyouweiya.xyz/tags/Material-Design/"/>
+      <category term="Material Design" scheme="http://blog.aiyouweiya.xyz/tags/Material-Design/"/>
     
-      <category term="UI" scheme="blog.aiyouweiya.xyz/tags/UI/"/>
+      <category term="UI" scheme="http://blog.aiyouweiya.xyz/tags/UI/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu Server 16.04.1 LTS配置</title>
-    <link href="blog.aiyouweiya.xyz/posts/59903/"/>
-    <id>blog.aiyouweiya.xyz/posts/59903/</id>
+    <link href="http://blog.aiyouweiya.xyz/posts/59903/"/>
+    <id>http://blog.aiyouweiya.xyz/posts/59903/</id>
     <published>2017-02-21T14:34:00.000Z</published>
     <updated>2017-02-25T08:59:47.711Z</updated>
     
@@ -86,17 +86,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="blog.aiyouweiya.xyz/categories/Linux/"/>
+      <category term="Linux" scheme="http://blog.aiyouweiya.xyz/categories/Linux/"/>
     
     
-      <category term="腾讯云" scheme="blog.aiyouweiya.xyz/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+      <category term="腾讯云" scheme="http://blog.aiyouweiya.xyz/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
     
   </entry>
   
   <entry>
     <title>Hexo博客配置篇（二）</title>
-    <link href="blog.aiyouweiya.xyz/posts/54527/"/>
-    <id>blog.aiyouweiya.xyz/posts/54527/</id>
+    <link href="http://blog.aiyouweiya.xyz/posts/54527/"/>
+    <id>http://blog.aiyouweiya.xyz/posts/54527/</id>
     <published>2017-02-16T04:19:00.000Z</published>
     <updated>2017-02-25T09:14:45.059Z</updated>
     
@@ -413,17 +413,17 @@
     
     </summary>
     
-      <category term="Blog" scheme="blog.aiyouweiya.xyz/categories/Blog/"/>
+      <category term="Blog" scheme="http://blog.aiyouweiya.xyz/categories/Blog/"/>
     
     
-      <category term="Hexo" scheme="blog.aiyouweiya.xyz/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://blog.aiyouweiya.xyz/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>解决Windows下文件路径太长无法删除的问题</title>
-    <link href="blog.aiyouweiya.xyz/posts/33255/"/>
-    <id>blog.aiyouweiya.xyz/posts/33255/</id>
+    <link href="http://blog.aiyouweiya.xyz/posts/33255/"/>
+    <id>http://blog.aiyouweiya.xyz/posts/33255/</id>
     <published>2017-02-15T16:00:00.000Z</published>
     <updated>2017-02-25T08:59:15.690Z</updated>
     
@@ -445,17 +445,17 @@
     
     </summary>
     
-      <category term="奇淫巧技" scheme="blog.aiyouweiya.xyz/categories/%E5%A5%87%E6%B7%AB%E5%B7%A7%E6%8A%80/"/>
+      <category term="奇淫巧技" scheme="http://blog.aiyouweiya.xyz/categories/%E5%A5%87%E6%B7%AB%E5%B7%A7%E6%8A%80/"/>
     
     
-      <category term="Windows奇淫巧技" scheme="blog.aiyouweiya.xyz/tags/Windows%E5%A5%87%E6%B7%AB%E5%B7%A7%E6%8A%80/"/>
+      <category term="Windows奇淫巧技" scheme="http://blog.aiyouweiya.xyz/tags/Windows%E5%A5%87%E6%B7%AB%E5%B7%A7%E6%8A%80/"/>
     
   </entry>
   
   <entry>
     <title>Hexo博客搭建篇（一）</title>
-    <link href="blog.aiyouweiya.xyz/posts/3077/"/>
-    <id>blog.aiyouweiya.xyz/posts/3077/</id>
+    <link href="http://blog.aiyouweiya.xyz/posts/3077/"/>
+    <id>http://blog.aiyouweiya.xyz/posts/3077/</id>
     <published>2017-02-14T16:00:00.000Z</published>
     <updated>2017-02-25T09:14:34.839Z</updated>
     
@@ -532,17 +532,17 @@
     
     </summary>
     
-      <category term="Blog" scheme="blog.aiyouweiya.xyz/categories/Blog/"/>
+      <category term="Blog" scheme="http://blog.aiyouweiya.xyz/categories/Blog/"/>
     
     
-      <category term="Hexo" scheme="blog.aiyouweiya.xyz/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://blog.aiyouweiya.xyz/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>用WinSCP远程连接Linux主机的小技巧</title>
-    <link href="blog.aiyouweiya.xyz/posts/52976/"/>
-    <id>blog.aiyouweiya.xyz/posts/52976/</id>
+    <link href="http://blog.aiyouweiya.xyz/posts/52976/"/>
+    <id>http://blog.aiyouweiya.xyz/posts/52976/</id>
     <published>2017-02-12T16:00:00.000Z</published>
     <updated>2017-02-25T09:15:05.538Z</updated>
     
@@ -566,17 +566,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="blog.aiyouweiya.xyz/categories/Linux/"/>
+      <category term="Linux" scheme="http://blog.aiyouweiya.xyz/categories/Linux/"/>
     
     
-      <category term="腾讯云" scheme="blog.aiyouweiya.xyz/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+      <category term="腾讯云" scheme="http://blog.aiyouweiya.xyz/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
     
   </entry>
   
   <entry>
     <title>SSH远程登录Linux主机方法及原理</title>
-    <link href="blog.aiyouweiya.xyz/posts/39582/"/>
-    <id>blog.aiyouweiya.xyz/posts/39582/</id>
+    <link href="http://blog.aiyouweiya.xyz/posts/39582/"/>
+    <id>http://blog.aiyouweiya.xyz/posts/39582/</id>
     <published>2017-01-02T16:00:00.000Z</published>
     <updated>2017-02-25T11:35:22.069Z</updated>
     
@@ -643,17 +643,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="blog.aiyouweiya.xyz/categories/Linux/"/>
+      <category term="Linux" scheme="http://blog.aiyouweiya.xyz/categories/Linux/"/>
     
     
-      <category term="腾讯云" scheme="blog.aiyouweiya.xyz/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+      <category term="腾讯云" scheme="http://blog.aiyouweiya.xyz/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
     
   </entry>
   
   <entry>
     <title>药房管理系统</title>
-    <link href="blog.aiyouweiya.xyz/posts/4506/"/>
-    <id>blog.aiyouweiya.xyz/posts/4506/</id>
+    <link href="http://blog.aiyouweiya.xyz/posts/4506/"/>
+    <id>http://blog.aiyouweiya.xyz/posts/4506/</id>
     <published>2016-06-12T16:00:00.000Z</published>
     <updated>2017-02-26T12:01:34.813Z</updated>
     
@@ -696,10 +696,10 @@
     
     </summary>
     
-      <category term="Java" scheme="blog.aiyouweiya.xyz/categories/Java/"/>
+      <category term="Java" scheme="http://blog.aiyouweiya.xyz/categories/Java/"/>
     
     
-      <category term="个人项目" scheme="blog.aiyouweiya.xyz/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+      <category term="个人项目" scheme="http://blog.aiyouweiya.xyz/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
     
   </entry>
   
