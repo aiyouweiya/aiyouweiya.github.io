@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.aiyouweiya.xyz/about/index.html</loc>
+    
+    <lastmod>2017-04-09T06:33:10.806Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.aiyouweiya.xyz/posts/43383/</loc>
+    
+    <lastmod>2017-04-09T06:20:39.757Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.aiyouweiya.xyz/posts/4506/</loc>
     
     <lastmod>2017-02-26T12:01:34.813Z</lastmod>
@@ -61,13 +75,6 @@
     <loc>http://blog.aiyouweiya.xyz/posts/64620/</loc>
     
     <lastmod>2017-02-25T08:57:40.558Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.aiyouweiya.xyz/about/index.html</loc>
-    
-    <lastmod>2017-02-17T08:56:28.651Z</lastmod>
     
   </url>
   
